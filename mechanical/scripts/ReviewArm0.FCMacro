@@ -18,11 +18,12 @@ def View_Style(doc):
         if obj.TypeId=='PartDesign::Body':
             for feature in obj.Group: feature.ViewObject.Visibility=False
             obj.ViewObject.Visibility=True
-            color=(.94,.62,.17) if obj.Role=='motor' else (.86,.88,.91) if obj.Role in ['rotor','metal','bearing'] else colors[obj.FrameKey]
+            color=(.94,.62,.17) if obj.Role=='motor' else (.86,.88,.91) if obj.Role in ['rotor','metal','bearing','hardware_placeholder'] else colors[obj.FrameKey]
             if obj.Name=='J4_TorqueTube':color=(.12,.33,.80)
             obj.ViewObject.ShapeColor=color
             obj.Tip.ViewObject.ShapeColor=color;obj.Tip.ViewObject.Visibility=True
             if obj.Role=='reserve':obj.ViewObject.Visibility=False
+        if hasattr(obj,'InstalledQuantity') and obj.InstalledQuantity==0:obj.ViewObject.Visibility=False
         if obj.Name.startswith(('Axis_','Origin_')):obj.ViewObject.Visibility=False
 
 
@@ -47,6 +48,13 @@ try:
         arm.Arm0_SetPose(doc,pose,cfg);View_Save(doc,'arm_0_'+pose)
         if pose=='STOW':View_Save(doc,'arm_0_STOW_forward')
     doc.removeObject('FrontDirectionGuide');doc.removeObject('FrontDirectionLabel');arm.Arm0_SetPose(doc,'HOME',cfg)
+    for row,key in enumerate(cfg['dimensions'],2):
+        if key in cfg['deprecated_parameters']:
+            doc.MasterParameters.set('C'+str(row),'LOCKED ZERO' if key in ['FoldLane','UpperLane'] else 'DEPRECATED / NOT DRIVING GEOMETRY')
+    hardware=doc.getObject('SchoolHardware') or doc.addObject('Spreadsheet::Sheet','SchoolHardware')
+    for row,(key,value) in enumerate(cfg['school_hardware'].items(),1):
+        hardware.set('A'+str(row),key);hardware.set('B'+str(row),'TBD' if value is None else str(value))
+        hardware.set('C'+str(row),'HARDWARE_VERIFY' if value is None else 'PROVISIONAL / IMAGE SOURCE / NOT MEASURED')
     doc.recompute();doc.save();App.closeDocument(doc.Name)
     parts=arm.Arm0_GetComponents(cfg['dimensions']);_,world=arm.Arm0_GetWorldParts(cfg['dimensions'],[0]*6,parts)
     for mode in ['J2_detail','J3_detail','J4_remote_drive','wrist']:
@@ -54,7 +62,7 @@ try:
         for part in world:
             name=part['name'];show=False;shape=part['shape'].copy()
             if mode=='J2_detail':
-                show=name.startswith('J2_') or name=='Upper_CentralBox'
+                show=name.startswith('J2_') or name in ['Upper_CentralBox','J1_RotatingPlatform']
                 if name=='Upper_CentralBox':shape=shape.common(arm.Shape_Box(45,200,180,80,-100,100))
             if mode=='J3_detail':
                 show=name.startswith('J3_') or name in ['Upper_CentralBox','Forearm_CentralBox','J4_CyberGear_Stator','J4_CyberGear_Rotor','J4_ProximalStatorHousing','J4_ProximalBearingHousing']
@@ -62,20 +70,17 @@ try:
                 if name=='Forearm_CentralBox':shape=shape.common(arm.Shape_Box(80,200,140,432,-100,100))
             if mode=='J4_remote_drive':show=part['owner'] in ['fore','roll'] or name.startswith('J3_CyberGear')
             if mode=='wrist':show=name.startswith(('J5_','J6_','Tool_')) or name=='J4_DistalOutputHub'
+            if part['role']=='hardware_placeholder':
+                show=(mode=='J2_detail' and part['assembly']=='J2') or (mode=='J3_detail' and part['assembly']=='J3' and part.get('fastener_id')!='F-J3-008') or (mode=='J4_remote_drive' and part['owner'] in ['fore','roll']) or (mode=='wrist' and part['assembly'] in ['J5','J6'])
             if not show or part['role']=='reserve' or shape.isNull():continue
             obj=detail.addObject('PartDesign::Feature',name);obj.Shape=shape
-            color=(.94,.62,.17) if part['role']=='motor' else (.86,.88,.91) if part['role'] in ['metal','rotor','bearing'] else colors[part['owner']]
+            color=(.94,.62,.17) if part['role']=='motor' else (.86,.88,.91) if part['role'] in ['metal','rotor','bearing','hardware_placeholder'] else colors[part['owner']]
             if name=='J4_TorqueTube':color=(.1,.3,.85)
             obj.ViewObject.ShapeColor=color
             if mode=='J4_remote_drive' and name in ['Forearm_CentralBox','J4_ProximalStatorHousing']:obj.ViewObject.Transparency=78
         View_Save(detail,'arm_0_'+mode);App.closeDocument(detail.Name)
-    # Compare against actual archived V2 geometry in its original backward STOW.
-    spec=importlib.util.spec_from_file_location('legacy_arm',root/'legacy/v2/scripts/build_robot_master.py');legacy=importlib.util.module_from_spec(spec);spec.loader.exec_module(legacy)
-    oldcfg=json.loads((root/'legacy/v2/master_parameters.json').read_text(encoding='utf-8-sig'))
-    doc=App.openDocument(str(root/'legacy/v2/freecad/Robot_Master.FCStd'));View_Style(doc);View_AddFront(doc,cfg)
-    legacy.Robot_SetPose(doc,'STOW',oldcfg);View_Save(doc,'arm_0_STOW_legacy_backward');App.closeDocument(doc.Name)
-    (root.parent/'analysis/v3/gui_review.log').write_text('\n'.join(log),encoding='utf-8')
+    (root.parent/'analysis/v4/gui_review.log').write_text('\n'.join(log),encoding='utf-8')
 except Exception:
-    (root.parent/'analysis/v3/gui_review.log').write_text(traceback.format_exc(),encoding='utf-8')
+    (root.parent/'analysis/v4/gui_review.log').write_text(traceback.format_exc(),encoding='utf-8')
 finally:
     Gui.getMainWindow().close()

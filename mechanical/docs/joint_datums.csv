@@ -1,0 +1,7 @@
+﻿"joint","parent","child","origin_x_mm","origin_y_mm","origin_z_mm","axis_x","axis_y","axis_z","reference_pose","angle_deg","status","dimension_chain"
+"J1","base","yaw","0","0","0","0","0","1","HOME","0","CONFIRMED_BASELINE","180/320/290/60/86/90 mm; offsets0"
+"J2","yaw","upper","0","0","180","0","-1","0","HOME","52","CONFIRMED_BASELINE","180/320/290/60/86/90 mm; offsets0"
+"J3","upper","fore","197.01167210421067","0","432.16344115415103","0","-1","0","HOME","-142","CONFIRMED_BASELINE","180/320/290/60/86/90 mm; offsets0"
+"J4","fore","roll","197.0116721042106","0","142.16344115415097","-3.3306690738754696e-16","0","-1.0000000000000002","HOME","0","CONFIRMED_BASELINE","180/320/290/60/86/90 mm; offsets0"
+"J5","roll","pitch","197.01167210421056","0","82.16344115415096","0","-1","0","HOME","90","CONFIRMED_BASELINE","180/320/290/60/86/90 mm; offsets0"
+"J6","pitch","tool","283.01167210421056","0","82.16344115415095","1","0","-2.220446049250313e-16","HOME","0","CONFIRMED_BASELINE","180/320/290/60/86/90 mm; offsets0"

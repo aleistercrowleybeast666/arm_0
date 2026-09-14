@@ -1,0 +1,44 @@
+[
+  {
+    "file": "fastener_schedule.csv",
+    "rows": 43,
+    "columns": 17,
+    "roundtrip": true,
+    "sha256": "07d2c42edb1e4ba7a90a7499a6aa800cfd31cd0bec5e2f12c2b0be8e0a5c8dc6"
+  },
+  {
+    "file": "arm_0_BOM.csv",
+    "rows": 66,
+    "columns": 10,
+    "roundtrip": true,
+    "sha256": "05a284e3bf064cd4d43f297d6c985091a8ec45e303e49f0ac4108224d875f3f2"
+  },
+  {
+    "file": "assembly_manifest.csv",
+    "rows": 427,
+    "columns": 16,
+    "roundtrip": true,
+    "sha256": "265723884d2a510bb62bebf865f7cfef1e66c2959e3f0be943594c815e19b076"
+  },
+  {
+    "file": "joint_datums.csv",
+    "rows": 6,
+    "columns": 13,
+    "roundtrip": true,
+    "sha256": "9744df116ae4b3709a9ccc3765990fade7a4b63924e15d103287dae00eb23c38"
+  },
+  {
+    "file": "parameter_summary.csv",
+    "rows": 44,
+    "columns": 5,
+    "roundtrip": true,
+    "sha256": "7eecaf53b7edc2795ff69be5a555b7b804be609e1190b1a5fe524ef34de44840"
+  },
+  {
+    "file": "hole_function_register.csv",
+    "rows": 47,
+    "columns": 5,
+    "roundtrip": true,
+    "sha256": "6885879ce0d7c412f2826f43d82fcc9d219dd4272ce300d06034cf4416811437"
+  }
+]

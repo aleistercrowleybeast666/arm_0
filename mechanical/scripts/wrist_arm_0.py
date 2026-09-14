@@ -19,7 +19,7 @@ def Wrist_GetComponents(p):
     bridge=Shape_Box(w-24,6,28,10,-3,-14)
     support=plate.fuse(root).fuse(bridge).cut(Shape_Cylinder(22,6,(w,-3,0),(0,1,0)))
     for yy,zz in Pattern_GetCircle(20,3,90): support=support.cut(Shape_Cylinder(2.25,6,(4,yy,zz),(1,0,0)))
-    support=Shape_DrillY(support,Pattern_GetCircle(27,3,90),2.8,-1,4,ox=w)
+    support=Shape_DrillY(support,Pattern_GetCircle(27,3,90),2.5,-3,6,ox=w)
     seat=Shape_Ring(31,20.3,4,(w,3,0),(0,1,0)).fuse(Shape_Ring(23,8.5,2,(w,7,0),(0,1,0)))
     seat=seat.fuse(Shape_Ring(23,16.15,9,(w,9,0),(0,1,0)))
     seat=Shape_DrillY(seat,Pattern_GetCircle(27,3,90),3.4,3,4,ox=w)

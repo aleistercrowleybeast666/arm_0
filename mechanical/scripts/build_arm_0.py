@@ -53,7 +53,7 @@ def Joint_GetChild(p,m,proximal_roll=False):
     stub=Shape_DrillY(stub,Pattern_GetCircle(16),3.4,-48,3)
     end=112 if proximal_roll else 80
     yy=21 if proximal_roll else 23
-    for zz in [-15,15]:
+    for zz in ([] if proximal_roll else [-15,15]):
         left=left.cut(Shape_Cylinder(2.25,12,(end-12,yy,zz),(1,0,0)))
         right=right.cut(Shape_Cylinder(2.25,12,(end-12,-yy,zz),(1,0,0)))
     return left.removeSplitter(),right.removeSplitter(),hub.removeSplitter(),stub.removeSplitter()
@@ -61,13 +61,13 @@ def Joint_GetChild(p,m,proximal_roll=False):
 
 def Joint_GetBearing():
     seat=Shape_Ring(23,16.15,12,(0,-33,0),(0,1,0)).fuse(Shape_Ring(23,10.3,2,(0,-21,0),(0,1,0)))
-    seat=Shape_DrillY(seat,Pattern_GetCircle(20,3,90),2.3,-33,5)
+    seat=Shape_DrillY(seat,Pattern_GetCircle(20,3,90),3.4,-33,14)
     cap=Shape_DrillY(Shape_Ring(23,10.5,2,(0,-35,0),(0,1,0)),Pattern_GetCircle(20,3,90),3.4,-35,2)
     bearing=Shape_Ring(16,10,10,(0,-31,0),(0,1,0))
     return seat,cap,bearing
 
 
-def Arm0_GetComponents(p):
+def Arm0_GetComponents(p, include_hardware=True):
     parts=J1_GetComponents(p); m=CyberGear_GetInterface(); motors=CyberGear_GetShapes()
     u,l,h=p['UpperArm'],p['Forearm'],p['BaseHeight']; w,fl=p['Wrist'],p['Flange']
     wall,rib=p['link_wall'],p['rib_thickness']; mx=p['j4_output_x']
@@ -99,7 +99,7 @@ def Arm0_GetComponents(p):
     seat,cap,bearing=Joint_GetBearing()
     opposite=seat.fuse(Shape_Box(40,8,52,-20,-29,118-h)).fuse(Shape_Box(48,20,6,-24,-37,118-h))
     opposite=opposite.cut(Shape_Cylinder(16.15,12,(0,-33,0),(0,1,0))).cut(Shape_Cylinder(10.3,14,(0,-33,0),(0,1,0)))
-    for x in [-18,18]: opposite=opposite.cut(Shape_Cylinder(3.1,8,(x,-26,118-h)))
+    for x in [-18,18]: opposite=opposite.cut(Shape_Cylinder(2.25,8,(x,-26,118-h)))
     Component_Add('J2_OppositeBearingPedestal','yaw',Component_Translate(opposite,z=h),assembly='J2')
     Component_Add('J2_BearingRetainer','yaw',Component_Translate(cap,z=h),assembly='J2')
     Component_Add('J2_BearingPlaceholder','yaw',Component_Translate(bearing,z=h),'bearing','J2','GEOMETRIC PLACEHOLDER 20x32x10')
@@ -122,12 +122,12 @@ def Arm0_GetComponents(p):
     endframe=Shape_Box(10,width,height,80,-width/2,-height/2).cut(Shape_Box(10,width-16,height-16,80,-width/2+8,-height/2+8))
     shell=shell.fuse(endframe)
     lids=Shape_Profile(outline,width/2-wall,wall).cut(endframe)
-    for xx,zz in [(xx,factor*bend+sign*(height/2-10)) for xx,factor in [(92,12/190),(145,65/190),(210,130/190),(260,180/190)] for sign in [-1,1]]:
+    for xx,zz in [(xx,factor*bend+sign*(height/2-10)) for xx,factor in [(108,28/190),(145,65/190),(210,130/190),(246,166/190)] for sign in [-1,1]]:
         shell=shell.fuse(Shape_Cylinder(4.5,width-wall,(xx,-width/2,zz),(0,1,0)))
-        shell=shell.cut(Shape_Cylinder(2.3,5,(xx,width/2-wall-5,zz),(0,1,0)))
+        shell=shell.cut(Shape_Cylinder(1.7,5,(xx,width/2-wall-5,zz),(0,1,0)))
         lids=lids.cut(Shape_Cylinder(1.7,wall,(xx,width/2-wall,zz),(0,1,0)))
     # End flanges bolt cheeks to central box, without a long cross-joint shaft.
-    for xx in [80,264]:
+    for xx in [80]:
         for yy in [-23,23]:
             for zz in [-15,15]: shell=shell.cut(Shape_Cylinder(2.25,10 if xx==80 else 6,(xx,yy,zz+(bend if xx==264 else 0)),(1,0,0)))
     # Internal diaphragm carries the removable J3 mounts; cover is not the sole load path.
@@ -165,8 +165,7 @@ def Arm0_GetComponents(p):
     # Flat bolted tabs join the two local fork branches without penetrating the motor.
     tabs=[Shape_Box(6,10,32,mx-3,42,-16),Shape_Box(6,10,32,mx-3,-52,-16)]
     housing=Shape_Merge([housing]+tabs)
-    for yy in [-48,48]:
-        for zz in [-10,10]: housing=housing.cut(Shape_Cylinder(1.7,6,(mx-3,yy,zz),(1,0,0)))
+    # V4 tab holes are defined by Fastener IDs at their cleared local positions.
     Component_Add('J4_ProximalStatorHousing','fore',housing,assembly='J4')
     for branch in parts:
         if branch['name'] in ['J3_OutputForkCheek','J3_OppositeForkCheek']: branch['shape']=branch['shape'].cut(housing).removeSplitter()
@@ -183,12 +182,12 @@ def Arm0_GetComponents(p):
         rr=Shape_Box(rib,width-2*wall,height-wall,xx,-width/2+wall,-height/2)
         rr=rr.cut(Shape_Cylinder(13,rib,(xx,0,0),(1,0,0))).cut(Shape_Box(rib,14,7,xx,-7,-22))
         fore=fore.fuse(rr)
-    for xx in [124,200,274]:
+    for xx in [136,200,274]:
         for yy in [-19,19]:
             fore=fore.fuse(Shape_Cylinder(4.5,10,(xx,yy,height/2-wall-10)))
-            fore=fore.cut(Shape_Cylinder(2.3,5,(xx,yy,height/2-wall-5)))
+            fore=fore.cut(Shape_Cylinder(1.7,5,(xx,yy,height/2-wall-5)))
     cover=Shape_Box(end-start,width,wall,start,-width/2,height/2-wall)
-    for xx in [124,200,274]:
+    for xx in [136,200,274]:
         for yy in [-19,19]: cover=cover.cut(Shape_Cylinder(1.7,wall,(xx,yy,height/2-wall)))
     # Bearing housings span the shell walls; bore shoulders allow removal from the end.
     for label,xx in [('Proximal',104),('Distal',262)]:
@@ -199,17 +198,14 @@ def Arm0_GetComponents(p):
         for branch in parts:
             if branch["name"] in ["J3_OutputForkCheek","J3_OppositeForkCheek"]: branch["shape"]=branch["shape"].cut(carrier).removeSplitter()
         cap4=Shape_Ring(23,11.4,2,(xx-2,0,0),(1,0,0))
-        for yy,zz in Pattern_GetCircle(20,3,90):
-            cap4=cap4.cut(Shape_Cylinder(1.7,2,(xx-2,yy,zz),(1,0,0)))
-            carrier=carrier.cut(Shape_Cylinder(1.15,5,(xx,yy,zz),(1,0,0)))
+        # V4 retainer holes are generated with their metal nut receivers.
         fore=fore.cut(cap4)
         cover=cover.cut(cap4)
         Component_Add('J4_'+label+'BearingRetainer','fore',cap4,assembly='J4')
         Component_Add('J4_'+label+'BearingHousing','fore',carrier,assembly='J4')
         Component_Add('J4_'+label+'Bearing','fore',Shape_Ring(16,11.1,10,(xx,0,0),(1,0,0)),'bearing','J4','GEOMETRIC PLACEHOLDER 22.2x32x10')
     fore=fore.cut(Shape_Cylinder(20,12,(274,0,0),(1,0,0)))
-    for yy in [-21,21]:
-        for zz in [-15,15]:fore=fore.cut(Shape_Cylinder(2.25,10,(112,yy,zz),(1,0,0)))
+    # V4 forearm end holes are supplied by Fastener_GetPlan.
     Component_Add('Forearm_CentralBox','fore',fore,assembly='J4')
     Component_Add('Forearm_RemovableCover','fore',cover,assembly='J4')
     duct=Shape_Box(end-start,p['forearm_cable_width'],p['forearm_cable_height'],start,12,-22)
@@ -224,8 +220,8 @@ def Arm0_GetComponents(p):
     tube=Shape_Ring(p['j4_torque_tube_od']/2,p['j4_torque_tube_od']/2-p['j4_torque_tube_wall'],p['j4_torque_tube_length'],(tube_start-l,0,0),(1,0,0))
     Component_Add('J4_TorqueTube','roll',tube,'metal','J4')
     distal=Shape_Ring(18,11.15,14,(-14,0,0),(1,0,0)).fuse(Shape_Ring(25,8,4,(0,0,0),(1,0,0)))
-    distal=distal.cut(Shape_Box(14,10,1,-14,10.5,-.5)).cut(Shape_Cylinder(1.7,22,(-11,15,-11)))
-    for yy,zz in Pattern_GetCircle(20,3,90): distal=distal.cut(Shape_Cylinder(2.25,4,(0,yy,zz),(1,0,0)))
+    distal=distal.cut(Shape_Box(14,10,1,-14,10.5,-.5)).cut(Shape_Cylinder(1.25,22,(-11,15,-11)))
+    for yy,zz in Pattern_GetCircle(20,3,90): distal=distal.cut(Shape_Cylinder(1.65,4,(0,yy,zz),(1,0,0)))
     Component_Add('J4_DistalOutputHub','roll',distal,'metal','J4')
     from wrist_arm_0 import Wrist_GetComponents
     parts.extend(Wrist_GetComponents(p))
@@ -233,6 +229,9 @@ def Arm0_GetComponents(p):
     for part in parts:
         if part['owner']=='fore' and part['role']=='printed': part['shape']=part['shape'].cut(duct).removeSplitter()
         if not part['shape'].isValid() or len(part['shape'].Solids)!=1: raise ValueError('Final component topology: '+part['name'])
+    if include_hardware:
+        from fasteners_arm_0 import Fastener_Apply
+        parts,_=Fastener_Apply(parts,p)
     return parts
 
 
@@ -256,13 +255,13 @@ def Arm0_SetPose(doc,name,cfg=None):
     doc.recompute(); return frames
 
 
-def Arm0_BuildDocument(cfg=None,save=True):
+def Arm0_BuildDocument(cfg=None,save=True,parts=None):
     cfg=cfg or Arm0_LoadConfig(); p=cfg['dimensions']
-    for k,v in dict(BaseHeight=180,UpperArm=320,Forearm=290,Wrist=60,Tool=90,MotorCount=6).items():
+    for k,v in dict(BaseHeight=180,UpperArm=320,Forearm=290,Wrist=60,Flange=86,Tool=90,MotorCount=6).items():
         if p[k]!=v: raise ValueError('Locked baseline '+k)
     if p['Flange']<86: raise ValueError('Compact serial wrist requires Flange >=86 mm; revalidate any change')
     if p['FoldLane']!=0 or p['UpperLane']!=0: raise ValueError('V3 requires central link lanes')
-    parts=Arm0_GetComponents(p); doc=App.newDocument('arm_0'); doc.Label='arm_0 | Prototype 0'
+    parts=parts if parts is not None else Arm0_GetComponents(p); doc=App.newDocument('arm_0'); doc.Label='arm_0 | Prototype 0'
     sheet=doc.addObject('Spreadsheet::Sheet','MasterParameters')
     for row,(k,v) in enumerate(p.items(),2):
         sheet.set('A'+str(row),k); sheet.set('B'+str(row),str(v)); sheet.setAlias('B'+str(row),k)
@@ -277,7 +276,7 @@ def Arm0_BuildDocument(cfg=None,save=True):
     groups={k:doc.addObject('App::Part','Rigid_'+k) for k in ['base','yaw','upper','fore','roll','pitch','tool']}
     for part in parts:
         body=doc.addObject('PartDesign::Body',part['name']); groups[part['owner']].addObject(body)
-        for key,value in [('FrameKey',part['owner']),('Role',part['role']),('Subassembly',part['assembly']),('ReleaseStatus',part.get('note','PROVISIONAL'))]:
+        for key,value in [('FrameKey',part['owner']),('Role',part['role']),('Subassembly',part['assembly']),('ReleaseStatus',part.get('note','PROVISIONAL')),('Fastener_ID',part.get('fastener_id',''))]:
             body.addProperty('App::PropertyString',key,'Engineering'); setattr(body,key,value)
         feature=doc.addObject('PartDesign::Feature',part['name']+'_Geometry'); body.addObject(feature); feature.Shape=part['shape']; body.Tip=feature
     Arm0_SetPose(doc,'HOME',cfg)

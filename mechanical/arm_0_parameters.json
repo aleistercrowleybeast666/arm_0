@@ -1,5 +1,5 @@
 {
-  "schema": "arm_0.V3",
+  "schema": "arm_0.Prototype0.freeze_review",
   "units": "mm / deg",
   "dimensions": {
     "BaseHeight": 180,
@@ -49,7 +49,8 @@
     "Forearm",
     "Wrist",
     "Tool",
-    "MotorCount"
+    "MotorCount",
+    "Flange"
   ],
   "status_of_other_dimensions": "PROVISIONAL; bearings are geometric placeholders, not released selections",
   "poses": {
@@ -88,7 +89,10 @@
   },
   "deprecated_parameters": [
     "UpperLane",
-    "FoldLane"
+    "FoldLane",
+    "insert_pilot_diameter",
+    "insert_depth",
+    "m4_insert_pilot"
   ],
   "front_direction": [
     1,
@@ -157,5 +161,22 @@
       "after_mm": 86,
       "reason": "User authorized changing wrist dimensions to place J5 fully behind J6 and eliminate enclosing box frames"
     }
-  ]
+  ],
+  "school_hardware": {
+    "nut_block_size_x": 22,
+    "nut_block_size_y": 10,
+    "nut_block_size_z": 10,
+    "nut_block_thread_size": "M4",
+    "nut_block_pair_A_spacing": 8,
+    "nut_block_pair_B_spacing": 8,
+    "nut_block_hole_depth_A": null,
+    "nut_block_hole_depth_B": null,
+    "edge_L3_mm": 5,
+    "model": "2-M4*8-H10*22",
+    "source": "User image 微信图片_20260914193739.png, fifth row, user confirmed M4 procurement",
+    "status": "PROVISIONAL / IMAGE SPECIFICATION / MEASURE SCHOOL HARDWARE",
+    "installed_quantity": 0,
+    "catalogue_note": "22x10x10 nominal image dimensions; for perpendicular independent plates only; actual depth and hole intersection pending verification"
+  },
+  "freeze_review_baseline_commit": "0e79c9e5848fc7ca91cf6d7643d3891bde745e0c"
 }

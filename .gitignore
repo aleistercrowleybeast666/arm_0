@@ -26,3 +26,13 @@ Thumbs.db
 /.codex/
 /.agents/
 /.venv/
+
+# Generated handoff and local table runtime.
+/dist/
+/mechanical/handoff/solidworks/
+/analysis/v4/table_runtime/
+# Intermediate diagnostics and table assembly inputs; final reports remain tracked.
+/analysis/v4/diagnostic.json
+/analysis/v4/service_diagnostic.json
+/analysis/v4/tables_input.json
+/analysis/v4/table_preview.png

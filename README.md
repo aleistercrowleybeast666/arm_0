@@ -4,6 +4,8 @@
 
 ![arm_0 前折 STOW](mechanical/exports/arm_0_STOW.png)
 
+当前进度：Prototype 0冻结前紧固与首次审图整理。当前CSV和V4验证为本轮依据，ZIP由白名单脚本单独生成并忽略于Git。
+
 ## 当前入口
 
 | 内容 | 文件 |
@@ -11,7 +13,7 @@
 | 我们自己的主装配 | [arm_0.FCStd](mechanical/freecad/arm_0.FCStd) |
 | 参数 | [arm_0_parameters.json](mechanical/arm_0_parameters.json) |
 | 完整 STEP | [arm_0.step](mechanical/exports/arm_0.step) |
-| V3 拓扑与量化报告 | [arm_0_v3_review.md](mechanical/docs/arm_0_v3_review.md) |
+| 冻结拓扑与当前审图报告 | [arm_0_v3_review.md](mechanical/docs/arm_0_v3_review.md) |
 | 装配顺序 | [assembly_concept.md](mechanical/docs/assembly_concept.md) |
 | 待解决事项 | [unresolved_issues.md](mechanical/docs/unresolved_issues.md) |
 | 文件清单 | [arm_0_files.md](mechanical/docs/arm_0_files.md) |
@@ -34,14 +36,8 @@
 
 打开 `arm_0.FCStd`，选择 PoseController 的 CurrentPose，再运行 `mechanical/scripts/SetArm0Pose.FCMacro`。仅修改下拉框不会自动移动实体。
 
-修改 MasterParameters 后运行 `RebuildArm0.FCMacro`，生成CUSTOM副本并另存；表格不会自动重建几何，也不会写回JSON。原基线中Flange已按本轮授权调整为86 mm，该尺寸更改后需重新验证完整运动；其余五项尺寸保持锁定。更改几何后应重新搜索姿态并验证，不沿用旧报告。
+修改 MasterParameters 后运行 `RebuildArm0.FCMacro`，生成CUSTOM副本并另存；表格不会自动重建几何，也不会写回JSON。原基线中Flange已按本轮授权调整为86 mm，该尺寸更改后需重新验证完整运动；其余五项尺寸保持锁定。本次冻结整理不重新搜索姿态；局部修改后复核已冻结的四姿态与两条启动路径。
 
-PowerShell在仓库根目录运行（按安装位置设置FreeCAD自带Python）：
-
-```powershell
-& .\mechanical\scripts\build_arm_0.ps1
-# 修改拓扑后重新搜索前折姿态并验证：
-& .\mechanical\scripts\build_arm_0.ps1 -SearchDocking
-```
+当前复核与交接脚本：`validate_assembly_arm_0.py --full`、`handoff_arm_0.py`、`tables_arm_0.mjs`、`ReviewArm0.FCMacro`、`review_freeze_arm_0.py`、`pack_arm_0.py`。FreeCAD脚本使用FreeCAD自带Python；CSV脚本使用配置了@oai/artifact-tool的Node运行时。先通过几何与拆装检查，再导出、渲染、提交代码，最后白名单打包，ZIP不推送。
 
 `ReviewArm0.FCMacro`用于生成原生CAD截图，应在独立FreeCAD进程运行，结束后关闭该进程。参考几何不参与主模型构建，参考研究需要的额外下载见 [来源记录](mechanical/docs/reference_license_notes.md)。`reference/`、原始SolidWorks文件、含上游网格的参考文件、说明书摘录、缓存和备份均不推送。

@@ -1,0 +1,15 @@
+{
+  "file": "arm_0_J6_OnePieceConnector.step",
+  "valid": true,
+  "solids": 1,
+  "volume_error_mm3": 2.6921043172478676e-09,
+  "schema": "'AUTOMOTIVE_DESIGN { 1 0 10303 214 1 1 1 1 }'",
+  "parts": [
+    {
+      "name": "J6_OnePieceConnector",
+      "relative_volume_error": 2.880535062232934e-14,
+      "center_error_mm": 1.980518697620803e-12,
+      "bounds_error_mm": 2.1316282072803006e-13
+    }
+  ]
+}

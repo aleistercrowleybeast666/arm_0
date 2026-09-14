@@ -66,9 +66,9 @@ def J1_GetComponents(p):
     for x,y in Pattern_GetCircle(radius-13,4,0):
         holes.append(Shape_Cylinder(p["m5_clearance"]/2,wall,(x,y,0)))
     for x,y in Pattern_GetCircle(47):
-        holes.append(Shape_Cylinder(p["insert_pilot_diameter"]/2,p["insert_depth"],(x,y,87-p["insert_depth"])))
+        holes.append(Shape_Cylinder(p["m3_clearance"]/2,8,(x,y,79)))
     for x,y in Pattern_GetCircle(57):
-        holes.append(Shape_Cylinder(p["insert_pilot_diameter"]/2,p["insert_depth"],(x,y,90-p["insert_depth"])))
+        holes.append(Shape_Cylinder(p["m3_clearance"]/2,11,(x,y,79)))
     cable_cut=Shape_Box(20,p["cable_channel"],18,radius-15,-p["cable_channel"]/2,48)
     final=reinforced.cut(Part.makeCompound(holes+[cable_cut])).removeSplitter()
     Component_Add("J1_BaseTray","base",[("OuterForm",blank),("OpenCavity",hollow),("RadialRibs",reinforced),("MountAndCableCuts",final)],assembly="J1")
@@ -82,11 +82,11 @@ def J1_GetComponents(p):
     Component_Add("J1_BearingPlaceholder","base",Shape_Ring(50,40,10,(0,0,96)),"bearing","J1")
     Component_Add("J1_OutputAdapter","yaw",Shape_Orient(Shape_OutputAdapter(p),(0,0,90),(0,0,1)),"metal","J1")
     hub=Shape_Ring(19,8.2,8,(0,0,98)).fuse(Shape_Ring(39.9,32,10,(0,0,96)))
-    bridge=Shape_Ring(40,8.2,4,(0,0,106))
-    for x,y in Pattern_GetCircle(25): bridge=bridge.cut(Shape_Cylinder(p["m4_clearance"]/2,4,(x,y,106)))
+    bridge=Shape_Ring(49,8.2,4,(0,0,106))
+    for x,y in [(25,0),(-25,0),(0,45),(0,-45)]: bridge=bridge.cut(Shape_Cylinder(1.65,4,(x,y,106)))
     Component_Add("J1_OutputHub","yaw",hub.fuse(bridge),"metal","J1")
     platform=Shape_Cylinder(65,8,(0,0,110)).cut(Shape_Cylinder(8.2,8,(0,0,110)))
-    for x,y in Pattern_GetCircle(25)+[(-34,20),(34,20),(-18,-26),(18,-26)]:
+    for x,y in [(25,0),(-25,0),(0,45),(0,-45)]+[(-34,20),(34,20),(-18,-26),(18,-26)]:
         platform=platform.cut(Shape_Cylinder(2.25,8,(x,y,110)))
     Component_Add("J1_RotatingPlatform","yaw",platform)
     return components
