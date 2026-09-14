@@ -1,0 +1,1383 @@
+{
+  "print_fit": [
+    {
+      "name": "J1_BaseTray",
+      "closed_mesh": true,
+      "triangles": 5968,
+      "bounds_mm": [
+        209.9420819432745,
+        209.97004613753907,
+        90.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J1_MotorMount",
+      "closed_mesh": true,
+      "triangles": 3844,
+      "bounds_mm": [
+        104.0,
+        103.88220327503282,
+        6.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J1_BearingSeat",
+      "closed_mesh": true,
+      "triangles": 2376,
+      "bounds_mm": [
+        124.0,
+        124.0,
+        16.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J1_RotatingPlatform",
+      "closed_mesh": true,
+      "triangles": 2596,
+      "bounds_mm": [
+        130.0,
+        129.88286560660862,
+        8.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J2_StatorPedestal",
+      "closed_mesh": true,
+      "triangles": 2492,
+      "bounds_mm": [
+        90.0,
+        20.0,
+        105.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J2_OppositeBearingPedestal",
+      "closed_mesh": true,
+      "triangles": 2200,
+      "bounds_mm": [
+        48.0,
+        20.0,
+        85.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J2_BearingRetainer",
+      "closed_mesh": true,
+      "triangles": 1272,
+      "bounds_mm": [
+        45.98570237203755,
+        2.0,
+        45.97140918803521
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J2_OutputCheek",
+      "closed_mesh": true,
+      "triangles": 2252,
+      "bounds_mm": [
+        107.99339612225809,
+        19.0,
+        55.97358760411818
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J2_OppositeForkCheek",
+      "closed_mesh": true,
+      "triangles": 2000,
+      "bounds_mm": [
+        107.99339612225809,
+        26.0,
+        55.97358760411818
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "Upper_CentralBox",
+      "closed_mesh": true,
+      "triangles": 6602,
+      "bounds_mm": [
+        190.0,
+        54.0,
+        118.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "Upper_RemovableCover",
+      "closed_mesh": true,
+      "triangles": 1844,
+      "bounds_mm": [
+        190.0,
+        4.500000000000007,
+        115.15789473684211
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J3_StatorMount",
+      "closed_mesh": true,
+      "triangles": 2916,
+      "bounds_mm": [
+        102.99992392107947,
+        6.0,
+        85.99969568458704
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J3_FixedBearingSupport",
+      "closed_mesh": true,
+      "triangles": 2046,
+      "bounds_mm": [
+        82.99921996597635,
+        14.0,
+        70.99687991681434
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J3_BearingRetainer",
+      "closed_mesh": true,
+      "triangles": 1272,
+      "bounds_mm": [
+        45.98570237203751,
+        2.0,
+        45.97140918803522
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J3_OutputForkCheek",
+      "closed_mesh": true,
+      "triangles": 2966,
+      "bounds_mm": [
+        139.9933961222581,
+        35.0,
+        55.97358760411818
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J3_OppositeForkCheek",
+      "closed_mesh": true,
+      "triangles": 2740,
+      "bounds_mm": [
+        139.9933961222581,
+        35.0,
+        55.97358760411818
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J4_ProximalStatorHousing",
+      "closed_mesh": true,
+      "triangles": 4356,
+      "bounds_mm": [
+        39.50000000000003,
+        104.0,
+        91.94563689149523
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J4_ProximalBearingRetainer",
+      "closed_mesh": true,
+      "triangles": 1272,
+      "bounds_mm": [
+        2.0,
+        45.98570237203755,
+        45.97140918803522
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J4_ProximalBearingHousing",
+      "closed_mesh": true,
+      "triangles": 1510,
+      "bounds_mm": [
+        12.000000000000028,
+        50.0,
+        50.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J4_DistalBearingRetainer",
+      "closed_mesh": true,
+      "triangles": 1276,
+      "bounds_mm": [
+        2.0,
+        45.98012729892001,
+        45.97175033078244
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J4_DistalBearingHousing",
+      "closed_mesh": true,
+      "triangles": 1500,
+      "bounds_mm": [
+        12.000000000000057,
+        50.0,
+        50.0
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "Forearm_CentralBox",
+      "closed_mesh": true,
+      "triangles": 4868,
+      "bounds_mm": [
+        174.0,
+        50.0,
+        49.5
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "Forearm_RemovableCover",
+      "closed_mesh": true,
+      "triangles": 1604,
+      "bounds_mm": [
+        174.0,
+        50.0,
+        4.5000000000000036
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J5_BearingRetainer",
+      "closed_mesh": true,
+      "triangles": 1272,
+      "bounds_mm": [
+        45.98570237203756,
+        3.0,
+        45.97140918803522
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    },
+    {
+      "name": "J6_BearingRetainer",
+      "closed_mesh": true,
+      "triangles": 1272,
+      "bounds_mm": [
+        3.0,
+        45.98570237203755,
+        45.97140918803522
+      ],
+      "release": "Static fit/assembly candidate only; material and orientation require engineering review"
+    }
+  ],
+  "step_round_trip": {
+    "arm_0.step": {
+      "valid": true,
+      "solids": 59,
+      "volume_error_mm3": 0.42931761406362057,
+      "relative_volume_error": 1.5265360206050803e-07,
+      "parts": [
+        {
+          "name": "J1_BaseTray",
+          "relative_volume_error": 4.736020107053958e-15,
+          "center_shift_mm": 7.395068224340908e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_MotorMount",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 1.1854112550674048e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_BearingSeat",
+          "relative_volume_error": 3.9910632077138923e-16,
+          "center_shift_mm": 7.215850233760756e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_BearingPlaceholder",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 1.684020817420555e-27,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_OutputAdapter",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 4.263256414560601e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_OutputHub",
+          "relative_volume_error": 1.6448672251206381e-16,
+          "center_shift_mm": 2.277050746975784e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_RotatingPlatform",
+          "relative_volume_error": 1.4062806575543032e-16,
+          "center_shift_mm": 1.5639348679516533e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_CyberGear_Stator",
+          "relative_volume_error": 1.1703967559406935e-14,
+          "center_shift_mm": 1.7261591543813202e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_CyberGear_Rotor",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 5.684344421292444e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_CyberGear_Stator",
+          "relative_volume_error": 2.319513570864282e-14,
+          "center_shift_mm": 6.391092999895883e-13,
+          "bounds_error_mm": 2.842170943040401e-14
+        },
+        {
+          "name": "J2_CyberGear_Rotor",
+          "relative_volume_error": 5.096851320529947e-16,
+          "center_shift_mm": 3.223016808814761e-13,
+          "bounds_error_mm": 7.105427357601002e-15
+        },
+        {
+          "name": "J3_CyberGear_Stator",
+          "relative_volume_error": 7.745898530225673e-14,
+          "center_shift_mm": 2.478792876009315e-12,
+          "bounds_error_mm": 4.803268893738277e-12
+        },
+        {
+          "name": "J3_CyberGear_Rotor",
+          "relative_volume_error": 1.6989504401766475e-15,
+          "center_shift_mm": 1.4526570096884774e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_CyberGear_Stator",
+          "relative_volume_error": 2.0215943966248308e-14,
+          "center_shift_mm": 1.6776595655809288e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_CyberGear_Rotor",
+          "relative_volume_error": 1.3591603521413197e-15,
+          "center_shift_mm": 1.3609819163093335e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J5_CyberGear_Stator",
+          "relative_volume_error": 5.745584074617943e-15,
+          "center_shift_mm": 6.911009826584628e-13,
+          "bounds_error_mm": 9.805489753489383e-13
+        },
+        {
+          "name": "J5_CyberGear_Rotor",
+          "relative_volume_error": 1.0193702641059898e-15,
+          "center_shift_mm": 6.538543677052582e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_CyberGear_Stator",
+          "relative_volume_error": 7.873578176328294e-15,
+          "center_shift_mm": 1.0400289863366942e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J6_CyberGear_Rotor",
+          "relative_volume_error": 6.795801760706599e-16,
+          "center_shift_mm": 6.821210306738684e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J2_StatorPedestal",
+          "relative_volume_error": 8.0958461351104e-16,
+          "center_shift_mm": 1.9945887798105654e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_OppositeBearingPedestal",
+          "relative_volume_error": 5.117895625848398e-14,
+          "center_shift_mm": 2.156821957052617e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_BearingRetainer",
+          "relative_volume_error": 3.529813146289765e-16,
+          "center_shift_mm": 8.460371081039267e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_BearingPlaceholder",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 2.842170943040401e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_OutputCheek",
+          "relative_volume_error": 3.174624277350764e-10,
+          "center_shift_mm": 1.0993540188248746e-08,
+          "bounds_error_mm": 6.139089236967266e-12
+        },
+        {
+          "name": "J2_OppositeForkCheek",
+          "relative_volume_error": 9.494440890532798e-09,
+          "center_shift_mm": 3.8046580307007354e-07,
+          "bounds_error_mm": 1.3073986337985843e-12
+        },
+        {
+          "name": "J2_ShortOutputHub",
+          "relative_volume_error": 1.7437795853278765e-14,
+          "center_shift_mm": 1.5013864127216215e-13,
+          "bounds_error_mm": 3.552713678800501e-15
+        },
+        {
+          "name": "J2_ShortBearingStub",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 8.527416033433351e-14,
+          "bounds_error_mm": 3.552713678800501e-15
+        },
+        {
+          "name": "Upper_CentralBox",
+          "relative_volume_error": 9.346444844079762e-15,
+          "center_shift_mm": 1.3148870053141971e-11,
+          "bounds_error_mm": 1.63140612130519e-11
+        },
+        {
+          "name": "Upper_RemovableCover",
+          "relative_volume_error": 4.8174792168705244e-14,
+          "center_shift_mm": 3.430591646787344e-12,
+          "bounds_error_mm": 1.9667822925839573e-11
+        },
+        {
+          "name": "J3_StatorMount",
+          "relative_volume_error": 2.1184363174447862e-14,
+          "center_shift_mm": 2.750048239966555e-12,
+          "bounds_error_mm": 2.2737367544323206e-12
+        },
+        {
+          "name": "J3_FixedBearingSupport",
+          "relative_volume_error": 1.1679174013116423e-13,
+          "center_shift_mm": 7.3723559901509e-12,
+          "bounds_error_mm": 1.375610736431554e-11
+        },
+        {
+          "name": "J3_BearingRetainer",
+          "relative_volume_error": 8.824532865724411e-16,
+          "center_shift_mm": 9.460897205204443e-13,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J3_BearingPlaceholder",
+          "relative_volume_error": 1.1134659807926978e-15,
+          "center_shift_mm": 1.389251877748051e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J3_OutputForkCheek",
+          "relative_volume_error": 1.7979396602649594e-08,
+          "center_shift_mm": 9.905043046668477e-07,
+          "bounds_error_mm": 1.1368683772161603e-11
+        },
+        {
+          "name": "J3_OppositeForkCheek",
+          "relative_volume_error": 7.634501125100557e-09,
+          "center_shift_mm": 4.7261094006149667e-07,
+          "bounds_error_mm": 1.1368683772161603e-11
+        },
+        {
+          "name": "J3_ShortOutputHub",
+          "relative_volume_error": 3.380797155227513e-14,
+          "center_shift_mm": 1.3941176219556655e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J3_ShortBearingStub",
+          "relative_volume_error": 6.405654544231782e-16,
+          "center_shift_mm": 9.460897205204443e-13,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_ProximalStatorHousing",
+          "relative_volume_error": 3.526320090851306e-15,
+          "center_shift_mm": 1.5139255701026215e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_ProximalBearingRetainer",
+          "relative_volume_error": 3.708035389580415e-16,
+          "center_shift_mm": 1.1863714168139908e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J4_ProximalBearingHousing",
+          "relative_volume_error": 1.1128692101685721e-15,
+          "center_shift_mm": 1.3762815830287142e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_ProximalBearing",
+          "relative_volume_error": 4.3602854884569817e-16,
+          "center_shift_mm": 1.229711270332974e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J4_DistalBearingRetainer",
+          "relative_volume_error": 7.445694563592477e-16,
+          "center_shift_mm": 1.1139719481267088e-12,
+          "bounds_error_mm": 9.947598300641403e-13
+        },
+        {
+          "name": "J4_DistalBearingHousing",
+          "relative_volume_error": 3.768120521803362e-16,
+          "center_shift_mm": 1.2866966050371761e-12,
+          "bounds_error_mm": 9.947598300641403e-13
+        },
+        {
+          "name": "J4_DistalBearing",
+          "relative_volume_error": 4.3602854884569827e-16,
+          "center_shift_mm": 1.1186039852446405e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "Forearm_CentralBox",
+          "relative_volume_error": 1.0655987340383392e-09,
+          "center_shift_mm": 6.795679594135344e-08,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "Forearm_RemovableCover",
+          "relative_volume_error": 5.618861723647421e-16,
+          "center_shift_mm": 9.91506323967367e-13,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J4_MotorOutputAdapter",
+          "relative_volume_error": 8.508228693823598e-07,
+          "center_shift_mm": 4.341038133778073e-06,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_TorqueTube",
+          "relative_volume_error": 9.897475384823975e-16,
+          "center_shift_mm": 1.2773969672920373e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J4_DistalOutputHub",
+          "relative_volume_error": 6.904555536609846e-07,
+          "center_shift_mm": 3.3112713855781955e-06,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J5_CompactStatorSupport",
+          "relative_volume_error": 2.988674333733096e-14,
+          "center_shift_mm": 1.001497426275693e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J5_RemovableBearingSeat",
+          "relative_volume_error": 6.353098192964464e-16,
+          "center_shift_mm": 5.970250509108156e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_OutputSupportBearing",
+          "relative_volume_error": 9.66211614538511e-16,
+          "center_shift_mm": 5.97555985312556e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_BearingRetainer",
+          "relative_volume_error": 4.307283744065067e-16,
+          "center_shift_mm": 5.970356213740898e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_ShortOutputHub",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 5.430221458909326e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_OnePieceConnector",
+          "relative_volume_error": 2.1994781975329564e-06,
+          "center_shift_mm": 6.619119320874499e-05,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_OutputBearing",
+          "relative_volume_error": 1.6103526908975188e-16,
+          "center_shift_mm": 6.310643617578387e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_BearingRetainer",
+          "relative_volume_error": 2.1536418720325345e-16,
+          "center_shift_mm": 5.180314426524232e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_ShortOutputHub",
+          "relative_volume_error": 5.024840403480078e-16,
+          "center_shift_mm": 7.41147628058576e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_RemovableToolAdapter",
+          "relative_volume_error": 1.217104289818855e-09,
+          "center_shift_mm": 2.0038549545220126e-08,
+          "bounds_error_mm": 5.684341886080801e-13
+        }
+      ],
+      "tolerance": "All solids valid; whole volume <1 mm3 AND relative <1e-5; each solid relative <1e-5, centroid and bounds each <0.001 mm"
+    },
+    "arm_0_J1.step": {
+      "valid": true,
+      "solids": 9,
+      "volume_error_mm3": 2.2118911147117615e-09,
+      "relative_volume_error": 2.4091718627640023e-15,
+      "parts": [
+        {
+          "name": "J1_BaseTray",
+          "relative_volume_error": 4.736020107053958e-15,
+          "center_shift_mm": 7.395068224340908e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_MotorMount",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 1.1854112550674048e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_BearingSeat",
+          "relative_volume_error": 3.9910632077138923e-16,
+          "center_shift_mm": 7.215850233760756e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_BearingPlaceholder",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 1.684020817420555e-27,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_OutputAdapter",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 4.263256414560601e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_OutputHub",
+          "relative_volume_error": 1.6448672251206381e-16,
+          "center_shift_mm": 2.277050746975784e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_RotatingPlatform",
+          "relative_volume_error": 1.4062806575543032e-16,
+          "center_shift_mm": 1.5639348679516533e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_CyberGear_Stator",
+          "relative_volume_error": 1.1703967559406935e-14,
+          "center_shift_mm": 1.7261591543813202e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J1_CyberGear_Rotor",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 5.684344421292444e-14,
+          "bounds_error_mm": 0.0
+        }
+      ],
+      "tolerance": "All solids valid; whole volume <1 mm3 AND relative <1e-5; each solid relative <1e-5, centroid and bounds each <0.001 mm"
+    },
+    "arm_0_J2.step": {
+      "valid": true,
+      "solids": 10,
+      "volume_error_mm3": 0.00035970890894532204,
+      "relative_volume_error": 1.077278335915989e-09,
+      "parts": [
+        {
+          "name": "J2_CyberGear_Stator",
+          "relative_volume_error": 2.319513570864282e-14,
+          "center_shift_mm": 6.391092999895883e-13,
+          "bounds_error_mm": 2.842170943040401e-14
+        },
+        {
+          "name": "J2_CyberGear_Rotor",
+          "relative_volume_error": 5.096851320529947e-16,
+          "center_shift_mm": 3.223016808814761e-13,
+          "bounds_error_mm": 7.105427357601002e-15
+        },
+        {
+          "name": "J2_StatorPedestal",
+          "relative_volume_error": 8.0958461351104e-16,
+          "center_shift_mm": 1.9945887798105654e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_OppositeBearingPedestal",
+          "relative_volume_error": 5.117895625848398e-14,
+          "center_shift_mm": 2.156821957052617e-13,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_BearingRetainer",
+          "relative_volume_error": 3.529813146289765e-16,
+          "center_shift_mm": 8.460371081039267e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_BearingPlaceholder",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 2.842170943040401e-14,
+          "bounds_error_mm": 0.0
+        },
+        {
+          "name": "J2_OutputCheek",
+          "relative_volume_error": 3.174624277350764e-10,
+          "center_shift_mm": 1.0993540188248746e-08,
+          "bounds_error_mm": 6.139089236967266e-12
+        },
+        {
+          "name": "J2_OppositeForkCheek",
+          "relative_volume_error": 9.494440890532798e-09,
+          "center_shift_mm": 3.8046580307007354e-07,
+          "bounds_error_mm": 1.3073986337985843e-12
+        },
+        {
+          "name": "J2_ShortOutputHub",
+          "relative_volume_error": 1.7437795853278765e-14,
+          "center_shift_mm": 1.5013864127216215e-13,
+          "bounds_error_mm": 3.552713678800501e-15
+        },
+        {
+          "name": "J2_ShortBearingStub",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 8.527416033433351e-14,
+          "bounds_error_mm": 3.552713678800501e-15
+        }
+      ],
+      "tolerance": "All solids valid; whole volume <1 mm3 AND relative <1e-5; each solid relative <1e-5, centroid and bounds each <0.001 mm"
+    },
+    "arm_0_J3.step": {
+      "valid": true,
+      "solids": 12,
+      "volume_error_mm3": 0.0008657027501612902,
+      "relative_volume_error": 1.5091350662864148e-09,
+      "parts": [
+        {
+          "name": "J3_CyberGear_Stator",
+          "relative_volume_error": 7.745898530225673e-14,
+          "center_shift_mm": 2.478792876009315e-12,
+          "bounds_error_mm": 4.803268893738277e-12
+        },
+        {
+          "name": "J3_CyberGear_Rotor",
+          "relative_volume_error": 1.6989504401766475e-15,
+          "center_shift_mm": 1.4526570096884774e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "Upper_CentralBox",
+          "relative_volume_error": 9.346444844079762e-15,
+          "center_shift_mm": 1.3148870053141971e-11,
+          "bounds_error_mm": 1.63140612130519e-11
+        },
+        {
+          "name": "Upper_RemovableCover",
+          "relative_volume_error": 4.8174792168705244e-14,
+          "center_shift_mm": 3.430591646787344e-12,
+          "bounds_error_mm": 1.9667822925839573e-11
+        },
+        {
+          "name": "J3_StatorMount",
+          "relative_volume_error": 2.1184363174447862e-14,
+          "center_shift_mm": 2.750048239966555e-12,
+          "bounds_error_mm": 2.2737367544323206e-12
+        },
+        {
+          "name": "J3_FixedBearingSupport",
+          "relative_volume_error": 1.1679174013116423e-13,
+          "center_shift_mm": 7.3723559901509e-12,
+          "bounds_error_mm": 1.375610736431554e-11
+        },
+        {
+          "name": "J3_BearingRetainer",
+          "relative_volume_error": 8.824532865724411e-16,
+          "center_shift_mm": 9.460897205204443e-13,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J3_BearingPlaceholder",
+          "relative_volume_error": 1.1134659807926978e-15,
+          "center_shift_mm": 1.389251877748051e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J3_OutputForkCheek",
+          "relative_volume_error": 1.7979396602649594e-08,
+          "center_shift_mm": 9.905043046668477e-07,
+          "bounds_error_mm": 1.1368683772161603e-11
+        },
+        {
+          "name": "J3_OppositeForkCheek",
+          "relative_volume_error": 7.634501125100557e-09,
+          "center_shift_mm": 4.7261094006149667e-07,
+          "bounds_error_mm": 1.1368683772161603e-11
+        },
+        {
+          "name": "J3_ShortOutputHub",
+          "relative_volume_error": 3.380797155227513e-14,
+          "center_shift_mm": 1.3941176219556655e-12,
+          "bounds_error_mm": 1.0231815394945443e-12
+        },
+        {
+          "name": "J3_ShortBearingStub",
+          "relative_volume_error": 6.405654544231782e-16,
+          "center_shift_mm": 9.460897205204443e-13,
+          "bounds_error_mm": 1.0231815394945443e-12
+        }
+      ],
+      "tolerance": "All solids valid; whole volume <1 mm3 AND relative <1e-5; each solid relative <1e-5, centroid and bounds each <0.001 mm"
+    },
+    "arm_0_wrist.step": {
+      "valid": true,
+      "solids": 14,
+      "volume_error_mm3": 0.2508873075712472,
+      "relative_volume_error": 4.957988458180257e-07,
+      "parts": [
+        {
+          "name": "J5_CyberGear_Stator",
+          "relative_volume_error": 5.745584074617943e-15,
+          "center_shift_mm": 6.911009826584628e-13,
+          "bounds_error_mm": 9.805489753489383e-13
+        },
+        {
+          "name": "J5_CyberGear_Rotor",
+          "relative_volume_error": 1.0193702641059898e-15,
+          "center_shift_mm": 6.538543677052582e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_CyberGear_Stator",
+          "relative_volume_error": 7.873578176328294e-15,
+          "center_shift_mm": 1.0400289863366942e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J6_CyberGear_Rotor",
+          "relative_volume_error": 6.795801760706599e-16,
+          "center_shift_mm": 6.821210306738684e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_CompactStatorSupport",
+          "relative_volume_error": 2.988674333733096e-14,
+          "center_shift_mm": 1.001497426275693e-12,
+          "bounds_error_mm": 9.663381206337363e-13
+        },
+        {
+          "name": "J5_RemovableBearingSeat",
+          "relative_volume_error": 6.353098192964464e-16,
+          "center_shift_mm": 5.970250509108156e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_OutputSupportBearing",
+          "relative_volume_error": 9.66211614538511e-16,
+          "center_shift_mm": 5.97555985312556e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_BearingRetainer",
+          "relative_volume_error": 4.307283744065067e-16,
+          "center_shift_mm": 5.970356213740898e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J5_ShortOutputHub",
+          "relative_volume_error": 0.0,
+          "center_shift_mm": 5.430221458909326e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_OnePieceConnector",
+          "relative_volume_error": 2.1994781975329564e-06,
+          "center_shift_mm": 6.619119320874499e-05,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_OutputBearing",
+          "relative_volume_error": 1.6103526908975188e-16,
+          "center_shift_mm": 6.310643617578387e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_BearingRetainer",
+          "relative_volume_error": 2.1536418720325345e-16,
+          "center_shift_mm": 5.180314426524232e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_ShortOutputHub",
+          "relative_volume_error": 5.024840403480078e-16,
+          "center_shift_mm": 7.41147628058576e-13,
+          "bounds_error_mm": 5.684341886080801e-13
+        },
+        {
+          "name": "J6_RemovableToolAdapter",
+          "relative_volume_error": 1.217104289818855e-09,
+          "center_shift_mm": 2.0038549545220126e-08,
+          "bounds_error_mm": 5.684341886080801e-13
+        }
+      ],
+      "tolerance": "All solids valid; whole volume <1 mm3 AND relative <1e-5; each solid relative <1e-5, centroid and bounds each <0.001 mm"
+    },
+    "arm_0_J6_OnePieceConnector.step": {
+      "valid": true,
+      "solids": 1,
+      "volume_error_mm3": 0.20912386220879853,
+      "relative_volume_error": 2.1994801337831075e-06,
+      "parts": [
+        {
+          "name": "J6_OnePieceConnector",
+          "relative_volume_error": 2.1994801337831075e-06,
+          "center_shift_mm": 6.619124302275863e-05,
+          "bounds_error_mm": 7.105427357601002e-15
+        }
+      ],
+      "tolerance": "All solids valid; whole volume <1 mm3 AND relative <1e-5; each solid relative <1e-5, centroid and bounds each <0.001 mm"
+    }
+  },
+  "envelopes": [
+    {
+      "file": "arm_0_base_envelope.step",
+      "rigid_frame": "base",
+      "faces": 30,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    },
+    {
+      "file": "arm_0_yaw_envelope.step",
+      "rigid_frame": "yaw",
+      "faces": 54,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    },
+    {
+      "file": "arm_0_upper_envelope.step",
+      "rigid_frame": "upper",
+      "faces": 72,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    },
+    {
+      "file": "arm_0_fore_envelope.step",
+      "rigid_frame": "fore",
+      "faces": 90,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    },
+    {
+      "file": "arm_0_roll_envelope.step",
+      "rigid_frame": "roll",
+      "faces": 54,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    },
+    {
+      "file": "arm_0_pitch_envelope.step",
+      "rigid_frame": "pitch",
+      "faces": 36,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    },
+    {
+      "file": "arm_0_tool_envelope.step",
+      "rigid_frame": "tool",
+      "faces": 18,
+      "semantics": "Conservative component AABBs in local rigid frame, may produce false positives"
+    }
+  ],
+  "bridge": {
+    "STOW": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.4617486132350339,
+          0.0,
+          0.8870108331782217
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          183.54445963233474,
+          0.0,
+          442.12865417247735
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.7372773368101242,
+          0.0,
+          -0.6755902076156601
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          158.26929423551377,
+          0.0,
+          153.23219172587113
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.7372773368101242,
+          0.0,
+          -0.6755902076156601
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          153.03994967065427,
+          0.0,
+          93.4605098403664
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -1.6653345369377348e-16,
+          0.0,
+          -1.0
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          239.03994967065427,
+          0.0,
+          93.46050984036637
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -1.6653345369377348e-16,
+          0.0,
+          -1.0
+        ]
+      }
+    },
+    "HOME": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.4383711467890774,
+          0.0,
+          0.898794046299167
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          197.01167210421067,
+          0.0,
+          432.16344115415103
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.7071067811865477,
+          0.0,
+          -0.7071067811865475
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          197.0116721042106,
+          0.0,
+          142.16344115415097
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.7071067811865477,
+          0.0,
+          -0.7071067811865475
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          197.01167210421056,
+          0.0,
+          82.16344115415096
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          -1.0
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          283.01167210421056,
+          0.0,
+          82.16344115415095
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -1.1102230246251565e-16,
+          0.0,
+          -1.0
+        ]
+      }
+    },
+    "SAFE_UNFOLD": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.42261826174069944,
+          0.0,
+          0.9063077870366499
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          205.69203509969256,
+          0.0,
+          425.134221798073
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.49999999999999994,
+          0.0,
+          -0.8660254037844387
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          350.6920350996926,
+          0.0,
+          173.98685470058578
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.49999999999999994,
+          0.0,
+          -0.8660254037844387
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          380.6920350996926,
+          0.0,
+          122.02533047351946
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          466.6920350996926,
+          0.0,
+          122.02533047351946
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          -1.0
+        ]
+      }
+    },
+    "CAKE_APPROACH": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.503748161369709,
+          0.0,
+          0.8638505599446223
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          157.59218554664807,
+          0.0,
+          458.50440401299016
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.1041440317654081,
+          0.0,
+          -0.9945622256287666
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          441.30151752228255,
+          0.0,
+          398.42932640222693
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.1041440317654081,
+          0.0,
+          -0.9945622256287666
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          500.00000000000006,
+          0.0,
+          386.00000000000006
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.7071067811865474,
+          0.0,
+          0.7071067811865477
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          500.0000000000001,
+          0.0,
+          300.00000000000006
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.7071067811865474,
+          0.0,
+          0.7071067811865477
+        ]
+      }
+    }
+  }
+}

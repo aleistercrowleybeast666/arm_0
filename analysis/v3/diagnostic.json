@@ -1,0 +1,47 @@
+{
+  "STOW": {
+    "tested_pairs": 1384,
+    "collisions": [],
+    "minimum_clearance_mm": null,
+    "minimum_pair": null,
+    "near_pairs": [],
+    "external_minimum_mm": null,
+    "clearance_violations": []
+  },
+  "HOME": {
+    "tested_pairs": 1384,
+    "collisions": [],
+    "minimum_clearance_mm": null,
+    "minimum_pair": null,
+    "near_pairs": [],
+    "external_minimum_mm": null,
+    "clearance_violations": []
+  },
+  "SAFE_UNFOLD": {
+    "tested_pairs": 1384,
+    "collisions": [],
+    "minimum_clearance_mm": null,
+    "minimum_pair": null,
+    "near_pairs": [],
+    "external_minimum_mm": null,
+    "clearance_violations": []
+  },
+  "CAKE_APPROACH": {
+    "tested_pairs": 1384,
+    "collisions": [],
+    "minimum_clearance_mm": null,
+    "minimum_pair": null,
+    "near_pairs": [],
+    "external_minimum_mm": null,
+    "clearance_violations": []
+  },
+  "same_rigid": {
+    "tested_pairs": 269,
+    "collisions": [],
+    "minimum_clearance_mm": null,
+    "minimum_pair": null,
+    "near_pairs": [],
+    "external_minimum_mm": null,
+    "clearance_violations": []
+  }
+}

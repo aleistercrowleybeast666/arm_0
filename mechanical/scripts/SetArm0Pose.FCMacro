@@ -1,0 +1,13 @@
+from pathlib import Path
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import build_arm_0 as arm
+doc=App.ActiveDocument
+if not doc or not doc.getObject('PoseController'): raise ValueError('Open arm_0.FCStd first')
+cfg=arm.Arm0_LoadConfig()
+for key in cfg['dimensions']: cfg['dimensions'][key]=float(doc.MasterParameters.get(key))
+arm.Arm0_SetPose(doc,str(doc.PoseController.CurrentPose),cfg)
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

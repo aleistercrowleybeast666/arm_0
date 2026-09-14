@@ -76,7 +76,7 @@ def Parol_BuildReference():
     target=root/"mechanical/freecad/PAROL6_reference_assembly.FCStd"
     doc.saveAs(str(target))
     report={"urdf":str(source.relative_to(root)),"pose":"all joint angles zero","joints":joint_report,"meshes":mesh_report,
-            "note":"STL numbers and URDF xyz both in meters; both scaled to mm. Reference geometry excluded from Robot_Master."}
+            "note":"STL numbers and URDF xyz both in meters; both scaled to mm. Reference geometry excluded from arm_0."}
     (root/"analysis/stage2/parol6_import.json").write_text(json.dumps(report,indent=2),encoding="utf-8")
     print(target)
     return doc

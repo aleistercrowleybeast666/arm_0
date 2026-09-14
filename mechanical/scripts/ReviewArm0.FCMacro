@@ -1,0 +1,81 @@
+"""Native FreeCAD renders. Run in a separate GUI process; closes that process on completion."""
+from pathlib import Path
+import sys,json,traceback,importlib.util
+import FreeCAD as App
+import FreeCADGui as Gui
+import Part
+root=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(root/'scripts'))
+import build_arm_0 as arm
+import search_arm_0_docking as docking
+colors={'base':(.24,.29,.36),'yaw':(.60,.65,.70),'upper':(.14,.44,.70),'fore':(.10,.65,.60),'roll':(.52,.58,.68),'pitch':(.65,.70,.78),'tool':(.79,.30,.14)}
+log=[]
+
+
+def View_Style(doc):
+    for obj in doc.Objects:
+        if obj.TypeId=='App::Part': obj.ViewObject.Visibility=True
+        if obj.TypeId=='PartDesign::Body':
+            for feature in obj.Group: feature.ViewObject.Visibility=False
+            obj.ViewObject.Visibility=True
+            color=(.94,.62,.17) if obj.Role=='motor' else (.86,.88,.91) if obj.Role in ['rotor','metal','bearing'] else colors[obj.FrameKey]
+            if obj.Name=='J4_TorqueTube':color=(.12,.33,.80)
+            obj.ViewObject.ShapeColor=color
+            obj.Tip.ViewObject.ShapeColor=color;obj.Tip.ViewObject.Visibility=True
+            if obj.Role=='reserve':obj.ViewObject.Visibility=False
+        if obj.Name.startswith(('Axis_','Origin_')):obj.ViewObject.Visibility=False
+
+
+def View_Save(doc,name):
+    doc.recompute();Gui.activeDocument().activeView().viewAxonometric();Gui.activeDocument().activeView().fitAll()
+    Gui.updateGui();Gui.activeDocument().activeView().redraw();Gui.updateGui()
+    Gui.activeDocument().activeView().saveImage(str(root/'exports'/(name+'.png')),1600,1200,'White')
+    log.append(name);print(name,flush=True)
+
+
+def View_AddFront(doc,cfg):
+    unit=App.Vector(*docking.Front_GetUnit(cfg));start=unit*120+App.Vector(0,0,3)
+    arrow=Part.makeCylinder(2,95,start,unit).fuse(Part.makeCone(7,0,16,start+unit*95,unit))
+    obj=doc.addObject('PartDesign::Feature','FrontDirectionGuide');obj.Shape=arrow;obj.ViewObject.ShapeColor=(.8,.12,.10)
+    note=doc.addObject('App::Annotation','FrontDirectionLabel');note.LabelText=['FRONT'];note.Position=start+unit*100+App.Vector(0,0,10)
+    note.ViewObject.TextColor=(.8,.12,.10);note.ViewObject.FontSize=18
+
+
+try:
+    cfg=arm.Arm0_LoadConfig();doc=App.openDocument(str(root/'freecad/arm_0.FCStd'));View_Style(doc);View_AddFront(doc,cfg)
+    for pose in ['HOME','STOW','SAFE_UNFOLD','CAKE_APPROACH']:
+        arm.Arm0_SetPose(doc,pose,cfg);View_Save(doc,'arm_0_'+pose)
+        if pose=='STOW':View_Save(doc,'arm_0_STOW_forward')
+    doc.removeObject('FrontDirectionGuide');doc.removeObject('FrontDirectionLabel');arm.Arm0_SetPose(doc,'HOME',cfg)
+    doc.recompute();doc.save();App.closeDocument(doc.Name)
+    parts=arm.Arm0_GetComponents(cfg['dimensions']);_,world=arm.Arm0_GetWorldParts(cfg['dimensions'],[0]*6,parts)
+    for mode in ['J2_detail','J3_detail','J4_remote_drive','wrist']:
+        detail=App.newDocument('arm_0_'+mode);detail.Label='arm_0 | '+mode
+        for part in world:
+            name=part['name'];show=False;shape=part['shape'].copy()
+            if mode=='J2_detail':
+                show=name.startswith('J2_') or name=='Upper_CentralBox'
+                if name=='Upper_CentralBox':shape=shape.common(arm.Shape_Box(45,200,180,80,-100,100))
+            if mode=='J3_detail':
+                show=name.startswith('J3_') or name in ['Upper_CentralBox','Forearm_CentralBox','J4_CyberGear_Stator','J4_CyberGear_Rotor','J4_ProximalStatorHousing','J4_ProximalBearingHousing']
+                if name=='Upper_CentralBox':shape=shape.common(arm.Shape_Box(70,200,240,250,-100,100))
+                if name=='Forearm_CentralBox':shape=shape.common(arm.Shape_Box(80,200,140,432,-100,100))
+            if mode=='J4_remote_drive':show=part['owner'] in ['fore','roll'] or name.startswith('J3_CyberGear')
+            if mode=='wrist':show=name.startswith(('J5_','J6_','Tool_')) or name=='J4_DistalOutputHub'
+            if not show or part['role']=='reserve' or shape.isNull():continue
+            obj=detail.addObject('PartDesign::Feature',name);obj.Shape=shape
+            color=(.94,.62,.17) if part['role']=='motor' else (.86,.88,.91) if part['role'] in ['metal','rotor','bearing'] else colors[part['owner']]
+            if name=='J4_TorqueTube':color=(.1,.3,.85)
+            obj.ViewObject.ShapeColor=color
+            if mode=='J4_remote_drive' and name in ['Forearm_CentralBox','J4_ProximalStatorHousing']:obj.ViewObject.Transparency=78
+        View_Save(detail,'arm_0_'+mode);App.closeDocument(detail.Name)
+    # Compare against actual archived V2 geometry in its original backward STOW.
+    spec=importlib.util.spec_from_file_location('legacy_arm',root/'legacy/v2/scripts/build_robot_master.py');legacy=importlib.util.module_from_spec(spec);spec.loader.exec_module(legacy)
+    oldcfg=json.loads((root/'legacy/v2/master_parameters.json').read_text(encoding='utf-8-sig'))
+    doc=App.openDocument(str(root/'legacy/v2/freecad/Robot_Master.FCStd'));View_Style(doc);View_AddFront(doc,cfg)
+    legacy.Robot_SetPose(doc,'STOW',oldcfg);View_Save(doc,'arm_0_STOW_legacy_backward');App.closeDocument(doc.Name)
+    (root.parent/'analysis/v3/gui_review.log').write_text('\n'.join(log),encoding='utf-8')
+except Exception:
+    (root.parent/'analysis/v3/gui_review.log').write_text(traceback.format_exc(),encoding='utf-8')
+finally:
+    Gui.getMainWindow().close()

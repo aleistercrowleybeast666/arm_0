@@ -1,0 +1,153 @@
+{
+  "schema": "arm_0.V3",
+  "units": "mm / deg",
+  "dimensions": {
+    "BaseHeight": 180,
+    "UpperArm": 320,
+    "Forearm": 290,
+    "Wrist": 60,
+    "Flange": 35,
+    "Tool": 90,
+    "MotorCount": 6,
+    "FoldLane": 0,
+    "UpperLane": 0,
+    "J1_base_radius": 105,
+    "link_wall": 4.5,
+    "rib_thickness": 4.5,
+    "bearing_allowance": 0.2,
+    "assembly_clearance": 2,
+    "print_clearance": 0.3,
+    "cable_channel": 14,
+    "upper_box_width": 54,
+    "upper_box_height": 64,
+    "upper_bend_offset": 54,
+    "m3_clearance": 3.4,
+    "m4_clearance": 4.5,
+    "m5_clearance": 5.5,
+    "insert_pilot_diameter": 4.6,
+    "insert_depth": 5,
+    "m4_insert_pilot": 6.2,
+    "bearing_outer": 32,
+    "bearing_inner": 20,
+    "bearing_width": 10,
+    "forearm_box_width": 50,
+    "forearm_box_height": 54,
+    "j4_output_x": 82,
+    "j4_torque_tube_od": 22,
+    "j4_torque_tube_wall": 2.5,
+    "j4_torque_tube_length": 192,
+    "wrist_shaft_diameter": 15,
+    "wrist_bearing_id": 15,
+    "wrist_bearing_od": 32,
+    "wrist_bearing_width": 9,
+    "forearm_cable_width": 8,
+    "forearm_cable_height": 5
+  },
+  "confirmed_baseline": [
+    "BaseHeight",
+    "UpperArm",
+    "Forearm",
+    "Wrist",
+    "Flange",
+    "Tool",
+    "MotorCount"
+  ],
+  "status_of_other_dimensions": "PROVISIONAL; bearing envelopes are 20x42x12 placeholders, not released selection",
+  "poses": {
+    "STOW": [
+      0.0,
+      55,
+      -150,
+      0,
+      95,
+      0
+    ],
+    "HOME": [
+      0.0,
+      52,
+      -142,
+      0,
+      90,
+      0
+    ],
+    "SAFE_UNFOLD": [
+      0.0,
+      50,
+      -110,
+      0,
+      60,
+      0
+    ],
+    "CAKE_APPROACH": [
+      0,
+      57.9411879239,
+      -77.3316061352,
+      0,
+      -70.6095817887,
+      0
+    ]
+  },
+  "deprecated_parameters": [
+    "UpperLane",
+    "FoldLane"
+  ],
+  "front_direction": [
+    1,
+    0,
+    0
+  ],
+  "cake_center_mm": [
+    500,
+    0,
+    210
+  ],
+  "backward_allowance_mm": 20,
+  "clearance_mm": 1.0,
+  "fit_clearance_mm": 0.08,
+  "path_step_deg": 2,
+  "mechanical_limits_deg": [
+    [
+      -170,
+      170
+    ],
+    [
+      -15,
+      100
+    ],
+    [
+      -150,
+      100
+    ],
+    [
+      -180,
+      180
+    ],
+    [
+      -120,
+      120
+    ],
+    [
+      -180,
+      180
+    ]
+  ],
+  "limits_status": "PROVISIONAL CAD operating bounds, not verified hardware stops",
+  "front_direction_source": "Default horizontal vector from J1/base to cake_center_mm; explicit vector is configurable",
+  "geometry_notes": {
+    "upper_bow_slope_deg": 15.865,
+    "forearm_fork_return_x_mm": 112,
+    "J4_motor_envelope_center_from_J3_mm": 63.75,
+    "bearings": "GEOMETRIC PLACEHOLDER, none selected for procurement",
+    "motor_interfaces": "REFERENCE-DERIVED / HARDWARE VERIFY"
+  },
+  "reserved_parameters": [
+    "MotorCount",
+    "assembly_clearance",
+    "bearing_allowance",
+    "bearing_inner",
+    "bearing_outer",
+    "bearing_width",
+    "m4_insert_pilot",
+    "print_clearance"
+  ]
+}

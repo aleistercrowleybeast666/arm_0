@@ -1,0 +1,278 @@
+[
+  {
+    "bend": 36,
+    "j3": -135,
+    "collision": []
+  },
+  {
+    "bend": 36,
+    "j3": -140,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1.6557
+      }
+    ]
+  },
+  {
+    "bend": 36,
+    "j3": -145,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 627.5186
+      }
+    ]
+  },
+  {
+    "bend": 36,
+    "j3": -150,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 78.6065
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1521.9803
+      }
+    ]
+  },
+  {
+    "bend": 36,
+    "j3": -155,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 2545.0647
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1986.6009
+      },
+      {
+        "pair": [
+          "J3_StatorMount",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 15.4714
+      }
+    ]
+  },
+  {
+    "bend": 36,
+    "j3": 0,
+    "collision": []
+  },
+  {
+    "bend": 36,
+    "j3": 90,
+    "collision": []
+  },
+  {
+    "bend": 40,
+    "j3": -135,
+    "collision": []
+  },
+  {
+    "bend": 40,
+    "j3": -140,
+    "collision": []
+  },
+  {
+    "bend": 40,
+    "j3": -145,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 61.7095
+      }
+    ]
+  },
+  {
+    "bend": 40,
+    "j3": -150,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 917.5316
+      }
+    ]
+  },
+  {
+    "bend": 40,
+    "j3": -155,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 386.6761
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1977.1961
+      },
+      {
+        "pair": [
+          "J3_StatorMount",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 15.4714
+      }
+    ]
+  },
+  {
+    "bend": 40,
+    "j3": 0,
+    "collision": []
+  },
+  {
+    "bend": 40,
+    "j3": 90,
+    "collision": []
+  },
+  {
+    "bend": 44,
+    "j3": -135,
+    "collision": []
+  },
+  {
+    "bend": 44,
+    "j3": -140,
+    "collision": []
+  },
+  {
+    "bend": 44,
+    "j3": -145,
+    "collision": []
+  },
+  {
+    "bend": 44,
+    "j3": -150,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 235.0093
+      }
+    ]
+  },
+  {
+    "bend": 44,
+    "j3": -155,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 2.3248
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1320.8766
+      },
+      {
+        "pair": [
+          "J3_StatorMount",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 15.4714
+      }
+    ]
+  },
+  {
+    "bend": 44,
+    "j3": 0,
+    "collision": []
+  },
+  {
+    "bend": 44,
+    "j3": 90,
+    "collision": []
+  },
+  {
+    "bend": 48,
+    "j3": -135,
+    "collision": []
+  },
+  {
+    "bend": 48,
+    "j3": -140,
+    "collision": []
+  },
+  {
+    "bend": 48,
+    "j3": -145,
+    "collision": []
+  },
+  {
+    "bend": 48,
+    "j3": -150,
+    "collision": []
+  },
+  {
+    "bend": 48,
+    "j3": -155,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 511.4355
+      },
+      {
+        "pair": [
+          "J3_StatorMount",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 15.4714
+      }
+    ]
+  },
+  {
+    "bend": 48,
+    "j3": 0,
+    "collision": []
+  },
+  {
+    "bend": 48,
+    "j3": 90,
+    "collision": []
+  }
+]

@@ -1,0 +1,394 @@
+{
+  "files": [
+    {
+      "path": "mechanical/freecad/arm_0.FCStd",
+      "bytes": 1292307,
+      "sha256": "02b52308b069986e129b9a7891c9e3042c53eec76fcd3b693b10abb36073e5c1"
+    },
+    {
+      "path": "mechanical/arm_0_parameters.json",
+      "bytes": 3487,
+      "sha256": "f82c7acd81c347557b7327c2644129ad00cb93ab3356856ce64ffd76f36b6d63"
+    },
+    {
+      "path": "mechanical/scripts/build_arm_0.ps1",
+      "bytes": 613,
+      "sha256": "620d2e53501366eaf14010b5e0e03b99e86e3b356e297d33aa44bb94ec4722c7"
+    },
+    {
+      "path": "mechanical/scripts/build_arm_0.py",
+      "bytes": 20354,
+      "sha256": "c9ee85018e7af197df0446a532d7637c40b7dd0010feb8eeb275c6ea4f11728d"
+    },
+    {
+      "path": "mechanical/scripts/check_arm_0.py",
+      "bytes": 3695,
+      "sha256": "1680a28bbe01dac97669ef69306578f648df8abc1518b440fd8577cc1816f80b"
+    },
+    {
+      "path": "mechanical/scripts/export_arm_0.py",
+      "bytes": 4649,
+      "sha256": "4bf16831689b1fee1ea82123787efa11de37ae33dc7ae9ee3feb919b99f10c91"
+    },
+    {
+      "path": "mechanical/scripts/geometry_arm_0.py",
+      "bytes": 4712,
+      "sha256": "a0576390a679d5c2138e542aec47d5e958243f320b9208bde7686caa2f8518f5"
+    },
+    {
+      "path": "mechanical/scripts/report_arm_0.py",
+      "bytes": 16036,
+      "sha256": "24aa2f0e7a612686e2ca7c74065e2414ea0aadb2b473f845f75b830998071b4a"
+    },
+    {
+      "path": "mechanical/scripts/search_arm_0_docking.py",
+      "bytes": 6359,
+      "sha256": "08ac8fb86310ab48972dd50e05a18398d72d5d51ad36f683217cd1af6ebc51ed"
+    },
+    {
+      "path": "mechanical/scripts/validate_arm_0.py",
+      "bytes": 10057,
+      "sha256": "923aa5cd399a185bbac51415be84b682415cd625ef76d2a99eac59b0bb592926"
+    },
+    {
+      "path": "mechanical/scripts/wrist_arm_0.py",
+      "bytes": 5339,
+      "sha256": "3665b9a9ac861c0466c7146c5172df875e137bba2a599ab72eb419825923ae57"
+    },
+    {
+      "path": "mechanical/scripts/SetArm0Pose.FCMacro",
+      "bytes": 556,
+      "sha256": "bb79580ab0459a3b3408efa4921990372a43309b034e1ca0480ecd18cf2254c3"
+    },
+    {
+      "path": "mechanical/scripts/RebuildArm0.FCMacro",
+      "bytes": 604,
+      "sha256": "bbbd8a974d197c0c5d50bf07ce4baf3b9eab883d4a29b8d9bfe397210f85542f"
+    },
+    {
+      "path": "mechanical/scripts/ReviewArm0.FCMacro",
+      "bytes": 5349,
+      "sha256": "592a7ebdcb59fc911fe5a6a66521ea33a343732ecc3aa8bfae23ca823c85fe9a"
+    },
+    {
+      "path": "mechanical/scripts/compact_wrist_review.py",
+      "bytes": 2854,
+      "sha256": "43e649cc50a4090aa0647c9c3ccc4560a047edf6d1a2dfb717a0cf20215241a4"
+    },
+    {
+      "path": "mechanical/exports/arm_0.step",
+      "bytes": 2538012,
+      "sha256": "86b4316776e4b1d54d1cc20c20e7c10bb423188f600b64843ede8683e1bdc6ce"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J1.step",
+      "bytes": 310224,
+      "sha256": "d8c2cd4fa8003ae8d398ea40b68ef5ebc88904a4e85c3721f925f967ab8b111e"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J2.step",
+      "bytes": 285001,
+      "sha256": "76d123941784a158e77ebe0a31d81259bc69ccacadd2691cce02a4928c828b1d"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J3.step",
+      "bytes": 544519,
+      "sha256": "c75555e76dd764ae1869bca213b2e725fe2650c806d830cdbbd4dcc674b17191"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J6_OnePieceConnector.step",
+      "bytes": 324819,
+      "sha256": "eff45aa48513874d67acadad478f438ee2216fd472a88218e936c04cc7006441"
+    },
+    {
+      "path": "mechanical/exports/arm_0_wrist.step",
+      "bytes": 692393,
+      "sha256": "fd7c2b9929691653f55a175f975c9a1d54d3b7ecbb3e24fa44dfa3b8181f9a34"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_base_envelope.step",
+      "bytes": 29927,
+      "sha256": "683a888765fd99d1c85409a80622c534929775bce0b3e1dc6a8ec34e2e37e7fe"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_fore_envelope.step",
+      "bytes": 88909,
+      "sha256": "42d1248b5523bc01c3fee0fc56403ab5049fb34fbd9dfbaf5c6a78cd3d1bf36b"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_pitch_envelope.step",
+      "bytes": 35299,
+      "sha256": "315f171641f03ec1d7b5f9467475abc61fceb9f3f39df21b6f6639055f5369f5"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_roll_envelope.step",
+      "bytes": 52421,
+      "sha256": "351e5bd5d42d53c991f707625e77ca8d269282124704d7dec9129ef96dbb1e41"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_tool_envelope.step",
+      "bytes": 18308,
+      "sha256": "55d277d6c79d50dccabb89dcc36a022a87d39542b30b8be7c6e75af52ff498ed"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_upper_envelope.step",
+      "bytes": 71486,
+      "sha256": "764123a8de0be2277dfe0ef691e3fa3420325834ec7f047dfd2dd112051618a7"
+    },
+    {
+      "path": "mechanical/exports/envelope/arm_0_yaw_envelope.step",
+      "bytes": 52787,
+      "sha256": "ef10afe85b34006d32112121faad2bed97d4071544dd44a0c6ba15d22b828768"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Forearm_CentralBox.stl",
+      "bytes": 243484,
+      "sha256": "b0eef9f37fcd6b8ca7b41011d64b1cd79addbe1af663f048d29ac27e599661e4"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Forearm_RemovableCover.stl",
+      "bytes": 80284,
+      "sha256": "740020dddf72863b1764d2bb499fde28b8dabbf7a9552c5d5f9e5ed3d8f3696c"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_BaseTray.stl",
+      "bytes": 298484,
+      "sha256": "a73c08068c3ca903c3e51274a07d825d9e31dada5398a600f93c11cbf3750630"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_BearingSeat.stl",
+      "bytes": 118884,
+      "sha256": "bda4cea7e26c9f4509d127a998447b335cbae18fa7961ac617452d2d722287f1"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_MotorMount.stl",
+      "bytes": 192284,
+      "sha256": "b51e8be48b035a43c412cca8a207bce65725846d959a8e4f3dea4ff89ed05123"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_RotatingPlatform.stl",
+      "bytes": 129884,
+      "sha256": "0749a92599bf23c818573f9ed79e667e4bf7dbcb7d364488f87484c362c6b2f8"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_BearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "a26cd5158eaa63b3860d555f2118733366c9a9acea7e1d59668ee70c82efd0c6"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_OppositeBearingPedestal.stl",
+      "bytes": 110084,
+      "sha256": "94ddd95f9c81e9da956400eaf9c78d67d68e39c0510d9a9c30f99c7b4014e60a"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_OppositeForkCheek.stl",
+      "bytes": 100084,
+      "sha256": "97627cd7dad2d484545d2ec315a04eb5644042977b6a72767a5e2a2351840594"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_OutputCheek.stl",
+      "bytes": 112684,
+      "sha256": "8c1f506114bae19f7e5c1e20d7e167b889a383cded7c7b9bee5942cea4ffe9a8"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_StatorPedestal.stl",
+      "bytes": 124684,
+      "sha256": "29b9d9584a08c92ff84e7fd6c5dddfe0c8f9849f2b9632066d0473156b948b50"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_BearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "d0d092469f3d805e935ee5a32b95b1d9019425c180e88c413e22ef5e9d1f54eb"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_FixedBearingSupport.stl",
+      "bytes": 102384,
+      "sha256": "7dba32e41a559564db0ff1571d5132689ed025b53d2ac69e9864457943818759"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_OppositeForkCheek.stl",
+      "bytes": 137084,
+      "sha256": "19a94a37111acc470484f8903cd873eefd7c8de6217790089e2b19e41c0cb38b"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_OutputForkCheek.stl",
+      "bytes": 148384,
+      "sha256": "376cf7f8cd85c8264f93893778a0e730422dc1e669db15f1169a4ba7bf335703"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_StatorMount.stl",
+      "bytes": 145884,
+      "sha256": "f4431ce353841cfe5be1eab12c86f8fdf90a3b8881888d3f9907f316ad857e47"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J4_DistalBearingHousing.stl",
+      "bytes": 75084,
+      "sha256": "0d92948fcaa47e2aa693f92c54871955e269e04ac5ac2b5ac142a7636db881b5"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J4_DistalBearingRetainer.stl",
+      "bytes": 63884,
+      "sha256": "673bf37921d263d271aff81d9c82e7519b31e3403b409cbc11f493097c004546"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J4_ProximalBearingHousing.stl",
+      "bytes": 75584,
+      "sha256": "fc2203f3fdfaa1108d0941d9622a8131f83fba6d4e08b62726b5b141dc60a24e"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J4_ProximalBearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "c71d3e467f3832cc9db332d48de49dfc9eeb64c502757780d215220e2af0c8ed"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J4_ProximalStatorHousing.stl",
+      "bytes": 217884,
+      "sha256": "9f14ff854ec46a875d7dcf34607e5150a3827694e97f2c3ac1efd940a1050501"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J5_BearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "e1bc5f6ed5f5e9896794415724dcb8f79aff49e103a33f8efba5ce321d6ac1df"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J6_BearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "69592a3ddd4ae517e2f84915f00c24aa6399785b935abb362eb875a50015ce5b"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Upper_CentralBox.stl",
+      "bytes": 330184,
+      "sha256": "d056306050bd1d4508adf7b44fff3c5938e0ee1cf723cdbb2f54f672ec9d5b05"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Upper_RemovableCover.stl",
+      "bytes": 92284,
+      "sha256": "8f613daee76d6a01b5d45314f854542d0a4fb32c70fa5470ea3a96d651db15c2"
+    },
+    {
+      "path": "mechanical/exports/arm_0_CAKE_APPROACH.png",
+      "bytes": 48291,
+      "sha256": "a180bc89c1de9acc9846a9f4e0dac10f26a314757801cc111916a9c9449f1208"
+    },
+    {
+      "path": "mechanical/exports/arm_0_HOME.png",
+      "bytes": 61713,
+      "sha256": "45771bae6aa747a6c814d69b4113a5ef8d6e89eb1aa0e1abd42cdf6ac0fa8097"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J2_detail.png",
+      "bytes": 74316,
+      "sha256": "3c99f77b068bf03ed20041a9e561eb422e4adfd892891e652284aafe563c3130"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J3_detail.png",
+      "bytes": 69335,
+      "sha256": "9037f44660e3058c5af3a7827174764e465bebb76c2d9c527088f495eeea63eb"
+    },
+    {
+      "path": "mechanical/exports/arm_0_J4_remote_drive.png",
+      "bytes": 93372,
+      "sha256": "7e392de6f3243fa38978ce74890045ea5100b16267e0c72a866bb8cf5b791c7d"
+    },
+    {
+      "path": "mechanical/exports/arm_0_SAFE_UNFOLD.png",
+      "bytes": 57402,
+      "sha256": "a312c9cb14da4d4775afdf97c8e2bf42b18f3c315d3e30bfda7d5ab0f5139474"
+    },
+    {
+      "path": "mechanical/exports/arm_0_STOW.png",
+      "bytes": 60755,
+      "sha256": "61859d3fb92874b19a84776f44cfbcfaad6839aad7c2585ed90a6e73c8becce0"
+    },
+    {
+      "path": "mechanical/exports/arm_0_STOW_forward.png",
+      "bytes": 60763,
+      "sha256": "1e30818a7dc9b40eb3f9610473cfb138bccb5d3f6ce7f93f9937c0aa5555376e"
+    },
+    {
+      "path": "mechanical/exports/arm_0_STOW_legacy_backward.png",
+      "bytes": 77210,
+      "sha256": "580963e0e717f4edcd5099fdf811dd4f6809db568fa1b211c4d99bc5439b947e"
+    },
+    {
+      "path": "mechanical/exports/arm_0_wrist.png",
+      "bytes": 130197,
+      "sha256": "0dd88b00bfa410d8c47fc179aeff6a403247376d7be6a5413e710ac50d75b14a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3670,
+      "sha256": "22ff3fb8927252681ed1304b229f884d35e70756a64794933d4827c8eb49843f"
+    },
+    {
+      "path": "mechanical/README.md",
+      "bytes": 1006,
+      "sha256": "f888688ba1cbb013f76ecfb759a28ac8207d872d6320e7bd70a5a8ff6695ef9d"
+    },
+    {
+      "path": "mechanical/docs/arm_0_v3_review.md",
+      "bytes": 10802,
+      "sha256": "b651375500bab49653985c7e0b61a3e142429026760970b46666a6e187921229"
+    },
+    {
+      "path": "mechanical/docs/assembly_concept.md",
+      "bytes": 7658,
+      "sha256": "009c2d9ffa7b869a1a953d17ed3fb636deaa9e98d81ea3378b43680c2b07c60e"
+    },
+    {
+      "path": "mechanical/docs/unresolved_issues.md",
+      "bytes": 3146,
+      "sha256": "42c1e6fa865fdf3db1ffbfc5a1d24db0f3b51e3c8bdb82d9ae9a325a17241591"
+    },
+    {
+      "path": "mechanical/docs/reference_license_notes.md",
+      "bytes": 1856,
+      "sha256": "61390f6f133ab3d38b839f976213a138f710dfa2f20c5edb9636ab89af57abf6"
+    },
+    {
+      "path": "analysis/v3/bow_trials.json",
+      "bytes": 3102,
+      "sha256": "01cd3121315f7e47b8068a41486c61d7deeb6ed694248383e148b52fb28f3dec"
+    },
+    {
+      "path": "analysis/v3/bow_trials_refined.json",
+      "bytes": 4566,
+      "sha256": "b04a47968df28e7e1759badc6c301a39c46c38ff1adc5045b3334523867f09f1"
+    },
+    {
+      "path": "analysis/v3/cable_duct_check.json",
+      "bytes": 150,
+      "sha256": "232619bff9222c4c80922618cc9f0ed2af5f07226736360eba0de026576dbd3f"
+    },
+    {
+      "path": "analysis/v3/diagnostic.json",
+      "bytes": 1124,
+      "sha256": "7c97b7e81de72506783c7c61c4cf13b83a1ceccbbfe94502710f47b75302d597"
+    },
+    {
+      "path": "analysis/v3/docking_search.json",
+      "bytes": 490831,
+      "sha256": "3ab32863b94d65214d8be772c5c4916fb449e6bbf2241cbb9eb0061949a2e68c"
+    },
+    {
+      "path": "analysis/v3/export_checks.json",
+      "bytes": 42030,
+      "sha256": "1159db4e61339389d33113fb52907f4c2bf832ce279bb220b3b2e3a2f950509b"
+    },
+    {
+      "path": "analysis/v3/fit_clearances_diagnostic.json",
+      "bytes": 5211,
+      "sha256": "08c7cc14c509df088ae4fa1abea73a539aa6a414978629f7482e2df3e0640a84"
+    },
+    {
+      "path": "analysis/v3/validation.json",
+      "bytes": 484787,
+      "sha256": "c9eb0e4ee939509b2aa2b41d0dfa5c75307bd9d5f35fbb74e673936d4b9d2e4b"
+    },
+    {
+      "path": "analysis/v3/validation_partial.json",
+      "bytes": 376750,
+      "sha256": "28c91684cb48867da853d4a0082e3c9e20c56a8ad4c03e7710cb41f85034ad9b"
+    }
+  ]
+}

@@ -1,0 +1,167 @@
+[
+  {
+    "bend": 32,
+    "j3": -130,
+    "minimum": 2.4999999999999525,
+    "collision": []
+  },
+  {
+    "bend": 32,
+    "j3": -135,
+    "minimum": 1.0606601717798099,
+    "collision": []
+  },
+  {
+    "bend": 32,
+    "j3": -140,
+    "minimum": 5.859285502108464e-14,
+    "collision": [
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 365.0799
+      }
+    ]
+  },
+  {
+    "bend": 32,
+    "j3": -145,
+    "minimum": 0.0,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 5.2688
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1292.1991
+      }
+    ]
+  },
+  {
+    "bend": 32,
+    "j3": -150,
+    "minimum": 0.0,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 1449.5582
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1603.2182
+      }
+    ]
+  },
+  {
+    "bend": 32,
+    "j3": -155,
+    "minimum": 0.0,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 6095.5374
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 1616.1907
+      },
+      {
+        "pair": [
+          "J3_StatorMount",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 14.8972
+      }
+    ]
+  },
+  {
+    "bend": 32,
+    "j3": 0,
+    "minimum": 2.4999999999999387,
+    "collision": []
+  },
+  {
+    "bend": 32,
+    "j3": 90,
+    "minimum": 0.0,
+    "collision": [
+      {
+        "pair": [
+          "J3_StatorMount",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 27.8852
+      }
+    ]
+  },
+  {
+    "bend": 32,
+    "j3": 150,
+    "minimum": 0.0,
+    "collision": [
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "Upper_CentralBox"
+        ],
+        "volume_mm3": 22281.0886
+      },
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "J3_StatorMount"
+        ],
+        "volume_mm3": 5288.8004
+      },
+      {
+        "pair": [
+          "J4_CyberGear_Stator",
+          "J3_FixedBearingSupport"
+        ],
+        "volume_mm3": 4602.2687
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J3_OutputForkCheek"
+        ],
+        "volume_mm3": 19.1212
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J3_OppositeForkCheek"
+        ],
+        "volume_mm3": 733.428
+      },
+      {
+        "pair": [
+          "Upper_CentralBox",
+          "J4_ProximalStatorHousing"
+        ],
+        "volume_mm3": 4275.2807
+      }
+    ]
+  }
+]

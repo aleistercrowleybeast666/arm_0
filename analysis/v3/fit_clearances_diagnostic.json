@@ -1,0 +1,263 @@
+{
+  "tested_pairs": 1354,
+  "collisions": [],
+  "minimum_clearance_mm": 0.0,
+  "minimum_pair": [
+    "J1_BearingPlaceholder",
+    "J1_OutputHub"
+  ],
+  "near_pairs": [
+    {
+      "pair": [
+        "J1_BearingSeat",
+        "J1_OutputHub"
+      ],
+      "distance_mm": 0.30000000000000426
+    },
+    {
+      "pair": [
+        "J1_BearingPlaceholder",
+        "J1_OutputHub"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "J1_OutputAdapter",
+        "J1_CyberGear_Stator"
+      ],
+      "distance_mm": 1.0
+    },
+    {
+      "pair": [
+        "J1_CyberGear_Stator",
+        "J1_CyberGear_Rotor"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "J2_CyberGear_Stator",
+        "J2_CyberGear_Rotor"
+      ],
+      "distance_mm": 1.7763568394002505e-15
+    },
+    {
+      "pair": [
+        "J2_CyberGear_Stator",
+        "J2_ShortOutputHub"
+      ],
+      "distance_mm": 0.9999999999999964
+    },
+    {
+      "pair": [
+        "J3_CyberGear_Stator",
+        "J3_CyberGear_Rotor"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "J3_CyberGear_Stator",
+        "J3_ShortOutputHub"
+      ],
+      "distance_mm": 1.0
+    },
+    {
+      "pair": [
+        "J4_CyberGear_Stator",
+        "J4_CyberGear_Rotor"
+      ],
+      "distance_mm": 5.684341886080802e-14
+    },
+    {
+      "pair": [
+        "J4_CyberGear_Stator",
+        "J4_MotorOutputAdapter"
+      ],
+      "distance_mm": 0.9999999999999619
+    },
+    {
+      "pair": [
+        "J5_CyberGear_Stator",
+        "J5_CyberGear_Rotor"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "J5_CyberGear_Stator",
+        "J5_ShortOutputHub"
+      ],
+      "distance_mm": 1.0
+    },
+    {
+      "pair": [
+        "J6_CyberGear_Stator",
+        "J6_CyberGear_Rotor"
+      ],
+      "distance_mm": 0.0
+    },
+    {
+      "pair": [
+        "J6_CyberGear_Stator",
+        "J6_ShortOutputHub"
+      ],
+      "distance_mm": 1.0
+    },
+    {
+      "pair": [
+        "J2_StatorPedestal",
+        "J2_ShortOutputHub"
+      ],
+      "distance_mm": 1.0
+    },
+    {
+      "pair": [
+        "J2_OppositeBearingPedestal",
+        "J2_ShortBearingStub"
+      ],
+      "distance_mm": 0.3999999999999498
+    },
+    {
+      "pair": [
+        "J2_BearingRetainer",
+        "J2_ShortBearingStub"
+      ],
+      "distance_mm": 0.5999999999999936
+    },
+    {
+      "pair": [
+        "J2_BearingPlaceholder",
+        "J2_ShortBearingStub"
+      ],
+      "distance_mm": 0.09999999999998692
+    },
+    {
+      "pair": [
+        "J3_StatorMount",
+        "J3_ShortOutputHub"
+      ],
+      "distance_mm": 0.9999999999999964
+    },
+    {
+      "pair": [
+        "J3_FixedBearingSupport",
+        "J3_ShortBearingStub"
+      ],
+      "distance_mm": 0.39999999999994157
+    },
+    {
+      "pair": [
+        "J3_BearingRetainer",
+        "J3_ShortBearingStub"
+      ],
+      "distance_mm": 0.5999999999999823
+    },
+    {
+      "pair": [
+        "J3_BearingPlaceholder",
+        "J3_ShortBearingStub"
+      ],
+      "distance_mm": 0.09999999999996448
+    },
+    {
+      "pair": [
+        "J4_ProximalBearingHousing",
+        "J4_TorqueTube"
+      ],
+      "distance_mm": 0.39999999999996894
+    },
+    {
+      "pair": [
+        "J4_ProximalBearing",
+        "J4_TorqueTube"
+      ],
+      "distance_mm": 0.09999999999996001
+    },
+    {
+      "pair": [
+        "J4_DistalBearingHousing",
+        "J4_TorqueTube"
+      ],
+      "distance_mm": 0.3999999999999533
+    },
+    {
+      "pair": [
+        "J4_DistalBearingHousing",
+        "J4_DistalOutputHub"
+      ],
+      "distance_mm": 1.99999999999995
+    },
+    {
+      "pair": [
+        "J4_DistalBearing",
+        "J4_TorqueTube"
+      ],
+      "distance_mm": 0.09999999999994794
+    },
+    {
+      "pair": [
+        "Forearm_CentralBox",
+        "J4_TorqueTube"
+      ],
+      "distance_mm": 1.99999999999995
+    },
+    {
+      "pair": [
+        "Forearm_CentralBox",
+        "J4_DistalOutputHub"
+      ],
+      "distance_mm": 1.9999999977016745
+    },
+    {
+      "pair": [
+        "J5_BoxYokeCarrier",
+        "J5_ShortOutputHub"
+      ],
+      "distance_mm": 1.0
+    },
+    {
+      "pair": [
+        "J5_BoxYokeCarrier",
+        "J5_OppositeShortStub"
+      ],
+      "distance_mm": 1.099999999999958
+    },
+    {
+      "pair": [
+        "J5_OppositeBearing",
+        "J5_OppositeShortStub"
+      ],
+      "distance_mm": 0.09999999999996943
+    },
+    {
+      "pair": [
+        "J5_BearingRetainer",
+        "J5_OppositeShortStub"
+      ],
+      "distance_mm": 1.0999999999999674
+    },
+    {
+      "pair": [
+        "J6_PitchBoxCarrier",
+        "J6_ShortOutputHub"
+      ],
+      "distance_mm": 0.5999999999999659
+    },
+    {
+      "pair": [
+        "J6_OutputBearing",
+        "J6_ShortOutputHub"
+      ],
+      "distance_mm": 0.0999999999999659
+    },
+    {
+      "pair": [
+        "J6_BearingRetainer",
+        "J6_ShortOutputHub"
+      ],
+      "distance_mm": 1.099999999999966
+    }
+  ]
+}

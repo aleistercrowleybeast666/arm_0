@@ -1,0 +1,14 @@
+from pathlib import Path
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import build_arm_0 as arm
+old=App.ActiveDocument
+if not old or not old.getObject('MasterParameters'): raise ValueError('Open arm_0.FCStd first')
+cfg=arm.Arm0_LoadConfig()
+for key in cfg['dimensions']: cfg['dimensions'][key]=float(old.MasterParameters.get(key))
+doc,parts=arm.Arm0_BuildDocument(cfg,save=False)
+doc.Label='arm_0 | Prototype 0 | CUSTOM - save separately'
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()
