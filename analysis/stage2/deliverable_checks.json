@@ -1,0 +1,329 @@
+{
+  "print_fit": [
+    {
+      "name": "J1_BaseTray",
+      "assembly": "J1",
+      "bounds_mm": [
+        210.0,
+        210.0,
+        90.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 5992,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J1_MotorMount",
+      "assembly": "J1",
+      "bounds_mm": [
+        104.0,
+        104.0,
+        6.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 3844,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J1_BearingSeat",
+      "assembly": "J1",
+      "bounds_mm": [
+        124.0,
+        124.0,
+        16.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 2376,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J1_RotatingPlatform",
+      "assembly": "J1",
+      "bounds_mm": [
+        112.0,
+        165.0,
+        8.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 2336,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J2_LeftMotorCheek",
+      "assembly": "J2",
+      "bounds_mm": [
+        100.0,
+        24.0,
+        112.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 3304,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J2_RightBearingCheek",
+      "assembly": "J2",
+      "bounds_mm": [
+        60.0,
+        30.0,
+        92.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 1902,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J2_BearingRetainer",
+      "assembly": "J2",
+      "bounds_mm": [
+        58.0,
+        3.0,
+        58.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 1272,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "Upper_RemovableLid",
+      "assembly": "J3",
+      "bounds_mm": [
+        211.86974962131683,
+        4.000000000000021,
+        72.00000000000001
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 1674,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J3_FixedMotorPlate",
+      "assembly": "J3",
+      "bounds_mm": [
+        104.0,
+        6.000000000000025,
+        104.00000000000003
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 3844,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J3_RemovableBearingCheek",
+      "assembly": "J3",
+      "bounds_mm": [
+        58.0,
+        16.0,
+        101.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 1894,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "J3_BearingRetainer",
+      "assembly": "J3",
+      "bounds_mm": [
+        58.0,
+        3.0,
+        58.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 1272,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "Upper_MainShell_Proximal",
+      "assembly": "J3",
+      "bounds_mm": [
+        200.0,
+        104.0,
+        73.5
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 6536,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    },
+    {
+      "name": "Upper_MainShell_Distal",
+      "assembly": "J3",
+      "bounds_mm": [
+        192.0,
+        174.0,
+        124.0
+      ],
+      "valid_solid": true,
+      "closed_mesh": true,
+      "triangles": 5840,
+      "release": "FIT / ASSEMBLY ONLY. Material, orientation, hardware interfaces and loads require verification."
+    }
+  ],
+  "envelopes": [
+    {
+      "file": "base_envelope.step",
+      "frame": "base",
+      "primitives": 5,
+      "faces": 30,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J1_CyberGear_Stator",
+        "J1_BaseTray",
+        "J1_MotorMount",
+        "J1_BearingSeat",
+        "J1_BearingPlaceholder"
+      ]
+    },
+    {
+      "file": "shoulder_envelope.step",
+      "frame": "yaw",
+      "primitives": 9,
+      "faces": 54,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J1_CyberGear_Rotor",
+        "J2_CyberGear_Stator",
+        "J1_OutputAdapter",
+        "J1_OutputHub",
+        "J1_RotatingPlatform",
+        "J2_LeftMotorCheek",
+        "J2_RightBearingCheek",
+        "J2_BearingPlaceholder",
+        "J2_BearingRetainer"
+      ]
+    },
+    {
+      "file": "upper_arm_envelope.step",
+      "frame": "upper",
+      "primitives": 11,
+      "faces": 66,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J2_CyberGear_Rotor",
+        "J3_CyberGear_Stator",
+        "J2_ThroughShaft",
+        "J2_OutputAdapter",
+        "Upper_RemovableLid",
+        "J3_FixedMotorPlate",
+        "J3_RemovableBearingCheek",
+        "J3_BearingPlaceholder",
+        "J3_BearingRetainer",
+        "Upper_MainShell_Proximal",
+        "Upper_MainShell_Distal"
+      ]
+    },
+    {
+      "file": "forearm_envelope.step",
+      "frame": "fore",
+      "primitives": 7,
+      "faces": 42,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J3_CyberGear_Rotor",
+        "J4_CyberGear_Stator",
+        "J3_ThroughShaft",
+        "J3_ForearmOutputHub",
+        "Forearm_Box",
+        "Forearm_Lid",
+        "J4_MountHousing"
+      ]
+    },
+    {
+      "file": "wrist_envelope.step",
+      "frame": "roll",
+      "primitives": 4,
+      "faces": 24,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J4_CyberGear_Rotor",
+        "J5_CyberGear_Stator",
+        "J4_OutputAdapter",
+        "J5_RollCarrier"
+      ]
+    },
+    {
+      "file": "wrist_pitch_envelope.step",
+      "frame": "pitch",
+      "primitives": 3,
+      "faces": 18,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J5_CyberGear_Rotor",
+        "J6_CyberGear_Stator",
+        "J6_PitchCarrier"
+      ]
+    },
+    {
+      "file": "tool_envelope.step",
+      "frame": "tool",
+      "primitives": 2,
+      "faces": 12,
+      "kind": "conservative per-component local AABBs, NOT exact collision bodies",
+      "included": [
+        "J6_CyberGear_Rotor",
+        "Tool_Interface"
+      ]
+    }
+  ],
+  "step_round_trip": {
+    "Robot_Master_coarse.step": {
+      "valid": true,
+      "solids": 41,
+      "expected_solids": 41,
+      "volume_error_mm3": 0.004643307067453861
+    },
+    "J1_base.step": {
+      "valid": true,
+      "solids": 9,
+      "expected_solids": 9,
+      "volume_error_mm3": 1.862645149230957e-09
+    },
+    "J2_shoulder.step": {
+      "valid": true,
+      "solids": 8,
+      "expected_solids": 8,
+      "volume_error_mm3": 1.618172973394394e-08
+    },
+    "J3_upper_elbow.step": {
+      "valid": true,
+      "solids": 11,
+      "expected_solids": 11,
+      "volume_error_mm3": 0.001319995615631342
+    }
+  },
+  "invariants": {
+    "J3_stator_fixed_on_J3_change": true,
+    "six_motor_stators": true,
+    "center_distances_mm": {
+      "UpperArm": 320.0,
+      "Forearm": 290.0,
+      "Wrist": 60.00000000000001,
+      "Flange": 34.99999999999998
+    }
+  },
+  "gravity_screen": {
+    "mass_lower_kg_per_motor": 0.314,
+    "source": "repository manual p5: 317g +/-3g; p4 rated 4Nm",
+    "minimum_x_levers_m": {
+      "J3": 0.27969535,
+      "J4": 0.5735,
+      "J5": 0.62969535,
+      "J6": 0.6685
+    },
+    "motor_only_J2_lower_bound_Nm": 6.627014828838,
+    "rated_Nm": 4,
+    "caveat": "Uses reference envelope bounds at horizontal full extension; excludes all structures/tool and assumes model contains each motor mass. Requires J2 gearing/counterbalance/reselection study before powered prototype."
+  },
+  "config_sha256": "0d97f05aec0e54405a60ced94a8087c72f48552e5fde520e119383d7e9b65d1c"
+}

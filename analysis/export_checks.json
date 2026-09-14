@@ -1,0 +1,47 @@
+{
+  "Arm_v1_CAKE_APPROACH.FCStd": {
+    "objects": 36,
+    "motor_count": 6,
+    "cad_valid": true,
+    "step_valid": true,
+    "step_solids": 36,
+    "volume_difference_mm3": 4.284083843231201e-08,
+    "sheet_BaseHeight": 180
+  },
+  "Arm_v1_EXTENDED.FCStd": {
+    "objects": 36,
+    "motor_count": 6,
+    "cad_valid": true,
+    "step_valid": true,
+    "step_solids": 36,
+    "volume_difference_mm3": 1.862645149230957e-09,
+    "sheet_BaseHeight": 180
+  },
+  "Arm_v1_HOME.FCStd": {
+    "objects": 36,
+    "motor_count": 6,
+    "cad_valid": true,
+    "step_valid": true,
+    "step_solids": 36,
+    "volume_difference_mm3": 4.1443854570388794e-08,
+    "sheet_BaseHeight": 180
+  },
+  "Arm_v1_SAFE_UNFOLD.FCStd": {
+    "objects": 36,
+    "motor_count": 6,
+    "cad_valid": true,
+    "step_valid": true,
+    "step_solids": 36,
+    "volume_difference_mm3": 5.168840289115906e-08,
+    "sheet_BaseHeight": 180
+  },
+  "Arm_v1_STOW.FCStd": {
+    "objects": 36,
+    "motor_count": 6,
+    "cad_valid": true,
+    "step_valid": true,
+    "step_solids": 36,
+    "volume_difference_mm3": 1.862645149230957e-08,
+    "sheet_BaseHeight": 180
+  }
+}

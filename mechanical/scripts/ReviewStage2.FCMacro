@@ -1,0 +1,56 @@
+from pathlib import Path
+import sys
+import traceback
+import FreeCAD as App
+import FreeCADGui as Gui
+root=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(root/"scripts"))
+import build_robot_master as robot
+colors={"base":(.25,.30,.38),"yaw":(.60,.66,.72),"upper":(.12,.44,.68),"fore":(.12,.68,.61),"roll":(.52,.60,.68),"pitch":(.62,.68,.76),"tool":(.8,.27,.16)}
+log=[]
+try:
+    for name in ["PAROL6_reference_assembly","CyberGear_Detail","CyberGear_Envelope","Robot_Master"]:
+        doc=App.openDocument(str(root/"freecad"/(name+".FCStd")))
+        for obj in doc.Objects:
+            if obj.TypeId=="App::Part": obj.ViewObject.Visibility=True
+            if obj.TypeId=="PartDesign::Body":
+                for feature in obj.Group:
+                    if hasattr(feature,"ViewObject"): feature.ViewObject.Visibility=False
+                obj.ViewObject.Visibility=True
+                if obj.Tip: obj.Tip.ViewObject.Visibility=True
+                role=obj.Role
+                color=(.91,.60,.16) if role=="motor" else (.84,.86,.88) if role in ["rotor","bearing","metal"] else colors[obj.FrameKey]
+                obj.ViewObject.ShapeColor=color
+                if obj.Tip: obj.Tip.ViewObject.ShapeColor=color
+                if role=="reserve": obj.ViewObject.Visibility=False
+            if obj.Name.startswith(("Axis_","Origin_","Joint_")):
+                obj.ViewObject.Visibility=False
+            if name=="CyberGear_Envelope":
+                if hasattr(obj,"Role"):
+                    obj.ViewObject.ShapeColor=(.92,.63,.22) if obj.Role=="stator" else (.83,.85,.88)
+                    if obj.Role=="cable_reserve": obj.ViewObject.ShapeColor=(.95,.25,.2); obj.ViewObject.Transparency=65
+                elif hasattr(obj,"Shape"): obj.ViewObject.Visibility=False
+            if obj.TypeId=="Mesh::Feature":
+                obj.ViewObject.Visibility=True
+                obj.ViewObject.ShapeColor=(.72,.74,.77) if "motor" in obj.Name else (.90,.59,.2)
+            if name=="CyberGear_Envelope" and hasattr(obj,"Role"): obj.ViewObject.Visibility=True
+        doc.recompute()
+        Gui.updateGui()
+        view=Gui.activeDocument().activeView(); view.viewAxonometric(); view.fitAll()
+        view.redraw(); Gui.updateGui()
+        if name=="Robot_Master":
+            for pose in robot.Robot_LoadConfig()["poses"]:
+                robot.Robot_SetPose(doc,pose)
+                view.viewAxonometric(); view.fitAll()
+                view.redraw(); Gui.updateGui()
+                view.saveImage(str(root/"exports"/("Robot_"+pose+".png")),1600,1200,"White")
+                log.append(pose+" screenshot saved")
+            robot.Robot_SetPose(doc,"HOME"); view.viewAxonometric(); view.fitAll()
+        else:
+            view.saveImage(str(root/"exports"/(name+".png")),1600,1200,"White")
+        doc.save(); App.closeDocument(doc.Name)
+    (root.parent/"analysis/stage2/gui_review.log").write_text("\n".join(log),encoding="utf-8")
+except Exception:
+    (root.parent/"analysis/stage2/gui_review.log").write_text(traceback.format_exc(),encoding="utf-8")
+finally:
+    Gui.getMainWindow().close()

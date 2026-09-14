@@ -1,0 +1,409 @@
+{
+  "generated_utc": "2026-09-14T05:58:53.203641+00:00",
+  "files": [
+    {
+      "path": "mechanical/freecad/Robot_Master.FCStd",
+      "bytes": 664352,
+      "sha256": "08be3751c7ded416e9278e48b87d12b960834da3962eec8815508d0d7d4dfc69"
+    },
+    {
+      "path": "mechanical/freecad/CyberGear_Detail.FCStd",
+      "bytes": 54811,
+      "sha256": "f5fefcb65b9632e136089b972943a8c21d7f1725592e55c11781697c85672d8e"
+    },
+    {
+      "path": "mechanical/freecad/CyberGear_Envelope.FCStd",
+      "bytes": 32149,
+      "sha256": "23c363aa8ee6dc68ff0c14545fe91477063ed697b06c83caef73dc56da70429b"
+    },
+    {
+      "path": "mechanical/freecad/PAROL6_reference_assembly.FCStd",
+      "bytes": 2380583,
+      "sha256": "0c351d881e453192b0d67391e14c46bb77c0e8813dc544e04c54810ea018f198"
+    },
+    {
+      "path": "mechanical/master_parameters.json",
+      "bytes": 1163,
+      "sha256": "0d97f05aec0e54405a60ced94a8087c72f48552e5fde520e119383d7e9b65d1c"
+    },
+    {
+      "path": "mechanical/scripts/import_parol6_urdf_to_freecad.py",
+      "bytes": 4526,
+      "sha256": "ce0055c479ee2bbe25dc0eff8d30cda9c8d7e6220a705f6d11ff4e2e9e556196"
+    },
+    {
+      "path": "mechanical/scripts/measure_cybergear.py",
+      "bytes": 2068,
+      "sha256": "0bb47996e09194721bc6d7b4b0043691667103040c7e4ed48a2b6e21a07f02df"
+    },
+    {
+      "path": "mechanical/scripts/cybergear_model.py",
+      "bytes": 4639,
+      "sha256": "3a4f1fc3653463ec06fdfc18e339243739bce6c27e242c00d21a57a507e488c3"
+    },
+    {
+      "path": "mechanical/scripts/build_robot_master.py",
+      "bytes": 23761,
+      "sha256": "1b1d30132452bc470908f42cff2953fe6c8ff162387f61736c1738dd265e28ce"
+    },
+    {
+      "path": "mechanical/scripts/check_robot_master.py",
+      "bytes": 3729,
+      "sha256": "dc0e2da6d7e1f08ee9fb8c120df92f52c9fa7a1957ce73c761d413fff0319b6d"
+    },
+    {
+      "path": "mechanical/scripts/export_robot_deliverables.py",
+      "bytes": 6221,
+      "sha256": "893625ecec30f31418f0933518bc76ac79752f84f873e66304c4861ff56cbe89"
+    },
+    {
+      "path": "mechanical/scripts/write_stage2_inventory.py",
+      "bytes": 4433,
+      "sha256": "fd0a7cf591da9be5f41e0da1ba1703cdf86893a4c80c80ec130d0d1deb81583a"
+    },
+    {
+      "path": "mechanical/scripts/build_stage2.ps1",
+      "bytes": 567,
+      "sha256": "ba0e96107f45fdd1cebefcc62ae179e218bdc3f9f27371217d988af67ffd840a"
+    },
+    {
+      "path": "mechanical/scripts/SetRobotPose.FCMacro",
+      "bytes": 666,
+      "sha256": "784807a2080f8ba40b0922c3a0b318ee0b10538aae8681b906c607f16fee2f8f"
+    },
+    {
+      "path": "mechanical/scripts/RebuildRobotMaster.FCMacro",
+      "bytes": 633,
+      "sha256": "16932bfa7ea4d699589a452d8fafa1865d58bc4aae630dc0469f472e54463f2b"
+    },
+    {
+      "path": "mechanical/scripts/ReviewStage2.FCMacro",
+      "bytes": 3110,
+      "sha256": "13697861a198e0fa524a33b2f53002cb9b78763ae9b3c325c32a12958e18f6b8"
+    },
+    {
+      "path": "mechanical/exports/Robot_Master_coarse.step",
+      "bytes": 1604839,
+      "sha256": "ae2a7bb5b348eeb8e7f846aa6cef532ff6e272930cb6a3f091da32c265303ddb"
+    },
+    {
+      "path": "mechanical/exports/J1_base.step",
+      "bytes": 319051,
+      "sha256": "9d005bbb3ccc759439c834359ff8e77f064dc4be5821e49971fac7562afb997f"
+    },
+    {
+      "path": "mechanical/exports/J2_shoulder.step",
+      "bytes": 189429,
+      "sha256": "3bfdb63742db40484e45557b37a244a3c8900b5a7fb2e1b1a8e399db4b9656c4"
+    },
+    {
+      "path": "mechanical/exports/J3_upper_elbow.step",
+      "bytes": 513500,
+      "sha256": "f30fed778907caf9a15b133c20e53d52944022e8fee97a384cc569dd8754545b"
+    },
+    {
+      "path": "mechanical/exports/envelope/base_envelope.step",
+      "bytes": 29927,
+      "sha256": "245ea265e3833c8945c7520fd5a4d8676a66ae8951eac09c5fdf8aca90429503"
+    },
+    {
+      "path": "mechanical/exports/envelope/forearm_envelope.step",
+      "bytes": 40940,
+      "sha256": "7a2b748bce6c1c9a2b3057da48a60c5c777991bd4ed7b94c25dab573bc79e3ad"
+    },
+    {
+      "path": "mechanical/exports/envelope/shoulder_envelope.step",
+      "bytes": 53099,
+      "sha256": "db81a9730f1f0332ce5c2ae9d57d1e0e09ee14438bb829b08770b5dbdbbfbbf8"
+    },
+    {
+      "path": "mechanical/exports/envelope/tool_envelope.step",
+      "bytes": 12827,
+      "sha256": "d63554246b988d4a5dd0277d49191ac464774c3ff4dfa74d829aef9bc994989c"
+    },
+    {
+      "path": "mechanical/exports/envelope/upper_arm_envelope.step",
+      "bytes": 65206,
+      "sha256": "bea397f994ac46d3c799f3de77c0fd3a54d5f577d09bf0a43b7fb59a51538fab"
+    },
+    {
+      "path": "mechanical/exports/envelope/wrist_envelope.step",
+      "bytes": 24084,
+      "sha256": "f5e02c76b4d9f6e6a81b37a5a4128d487dd62f13660cbf75e57b3bb251fa586e"
+    },
+    {
+      "path": "mechanical/exports/envelope/wrist_pitch_envelope.step",
+      "bytes": 18221,
+      "sha256": "9967562d0047ce50788a5179c9c8ca6df6525cde5449423a6b58ec3d808810ef"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_BaseTray.stl",
+      "bytes": 299684,
+      "sha256": "d1fd07b371bf69298865137cd88d31266bfdf62ef812b8593224071ab53d2663"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_BearingSeat.stl",
+      "bytes": 118884,
+      "sha256": "bda4cea7e26c9f4509d127a998447b335cbae18fa7961ac617452d2d722287f1"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_MotorMount.stl",
+      "bytes": 192284,
+      "sha256": "b51e8be48b035a43c412cca8a207bce65725846d959a8e4f3dea4ff89ed05123"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J1_RotatingPlatform.stl",
+      "bytes": 116884,
+      "sha256": "b816ea0eedb365ca2892ce188e2c0ef2c9fefea842b7f6b0b03decf0ce29ae6c"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_BearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "bb44ff487355fce3252d538786909f185b66f631a1157e49ff55035b9f66d942"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_LeftMotorCheek.stl",
+      "bytes": 165284,
+      "sha256": "d0cfd5ac14c02f0eb8f920dee4fd95fce5e599b3d1c2bf2cc415a2e398e32986"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J2_RightBearingCheek.stl",
+      "bytes": 95184,
+      "sha256": "1fe22c5fbf8eab3452ae141b9e6c851bf22c615ac51baf8f1b0d5357d774bb43"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_BearingRetainer.stl",
+      "bytes": 63684,
+      "sha256": "31c7762b78f4ff0e1be2715a73d7dfb32e46690f85d730f4975506476425f2e8"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_FixedMotorPlate.stl",
+      "bytes": 192284,
+      "sha256": "117490a0e84cdeb9cbfaf170fa4da205e002f37319086790ad1ead81be74cf6e"
+    },
+    {
+      "path": "mechanical/exports/print_fit/J3_RemovableBearingCheek.stl",
+      "bytes": 94784,
+      "sha256": "4cf8d250bc0a219949aca26cd330cb12d9de9295a472d1abfef183da5ca706f3"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Upper_MainShell_Distal.stl",
+      "bytes": 292084,
+      "sha256": "9281353eed909c18ae3bc5f85bed0227d3c1a182fde2d5e1e97cfa56e00be9a7"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Upper_MainShell_Proximal.stl",
+      "bytes": 326884,
+      "sha256": "7f383c2bf9a7b6ac86132f86d32457d8bbb26e79d874bab20a3b3ae8889ea8d8"
+    },
+    {
+      "path": "mechanical/exports/print_fit/Upper_RemovableLid.stl",
+      "bytes": 83784,
+      "sha256": "7ee15add69f6cc34a3f5bdda68bfcb63bab344e3d2f4a14b2a365c1ce710117c"
+    },
+    {
+      "path": "mechanical/docs/master_stage2_review.md",
+      "bytes": 9270,
+      "sha256": "0174dd6da74da319bfd76e0488fe18bd04bcbd64177f712fce82825f5efc628a"
+    },
+    {
+      "path": "mechanical/docs/cybergear_interface.md",
+      "bytes": 4392,
+      "sha256": "3a2504ef48e0e81ba2bc1d04ce50a8f42f2a5b4482082aa15b3ce20bb62cf79b"
+    },
+    {
+      "path": "mechanical/docs/PAROL6_reference_review.md",
+      "bytes": 4231,
+      "sha256": "8f3dfd4db10d5efc1ed0a8875e7bbc878feac7912be93659d77223889e3c73b5"
+    },
+    {
+      "path": "mechanical/docs/Thor_reference_review.md",
+      "bytes": 2461,
+      "sha256": "4ef83bf3a0f4daa573322b8d1f515633e5a760c1c46d36f17b29dfa8d7ae6725"
+    },
+    {
+      "path": "mechanical/docs/reference_license_notes.md",
+      "bytes": 1863,
+      "sha256": "89df9658d5cd24c735bf08c1da45904377de08d05544a258b170eda8fb931e1e"
+    },
+    {
+      "path": "mechanical/docs/assembly_concept.md",
+      "bytes": 6407,
+      "sha256": "2bb5aa7ddd22f78316acd8cbbc8d5268aaaad1dd70baebef29aeb5c18279b655"
+    },
+    {
+      "path": "mechanical/docs/unresolved_issues.md",
+      "bytes": 2954,
+      "sha256": "bbf21d80de22ccba0c80e16719e42896de14905491fd807656e0cc2b12ab1196"
+    },
+    {
+      "path": "mechanical/exports/Robot_HOME.png",
+      "bytes": 40255,
+      "sha256": "032ba72d6ca4109f9b016f1b91a4c7484ee55e8186efafbb1a9f53cb252bc464"
+    },
+    {
+      "path": "mechanical/exports/Robot_STOW.png",
+      "bytes": 76950,
+      "sha256": "75dada20b550ea2a78eaaf254a78eae0b152cb6f8995f3e5a589c8990e4981c7"
+    },
+    {
+      "path": "mechanical/exports/Robot_SAFE_UNFOLD.png",
+      "bytes": 76634,
+      "sha256": "4bc298b9add6b227aae4cdc64b207fb358216413f9b42b51a6f6a9833b6e6802"
+    },
+    {
+      "path": "mechanical/exports/Robot_CAKE_APPROACH.png",
+      "bytes": 49525,
+      "sha256": "cadcfe7b1f01506b6dd9dc340ffd33009e7a28b2dba68b73135839485614f1b9"
+    },
+    {
+      "path": "mechanical/exports/CyberGear_Detail.png",
+      "bytes": 26757,
+      "sha256": "4c298b97efb9c6782b0a6c3063df3ca7e633afb277aa32537966ec22a8cbff8e"
+    },
+    {
+      "path": "mechanical/exports/CyberGear_Envelope.png",
+      "bytes": 38187,
+      "sha256": "fcca6f3ef18d4375a70bbf5ea7b79ab3416f65bf218e279a96337cbc2e3ffd4d"
+    },
+    {
+      "path": "mechanical/exports/PAROL6_reference_assembly.png",
+      "bytes": 62522,
+      "sha256": "cf11a1f2d8127c41b654918c13ed4d1616e52a8a6441aa64b9de939829a55a7a"
+    },
+    {
+      "path": "analysis/stage2/armdesigner_bridge_v2.json",
+      "bytes": 8936,
+      "sha256": "70a2ddb9f180d5c5ba5668c85047492f4e83d4a875504e7a43ebdc21ae4a0848"
+    },
+    {
+      "path": "analysis/stage2/cybergear-04.png",
+      "bytes": 174951,
+      "sha256": "b87d941f45ae44ee5681e8bbe7f0443554a40514653765efff485b5e54ef8760"
+    },
+    {
+      "path": "analysis/stage2/cybergear-05.png",
+      "bytes": 238051,
+      "sha256": "d80039762c32021f29581840473fc8fde1b2e938dbd58f7e750b98e244e215a6"
+    },
+    {
+      "path": "analysis/stage2/cybergear-06.png",
+      "bytes": 169031,
+      "sha256": "b0904695227a186ac3ab5aa99b675dd4f44ae4bafa449ccc9978b406e66e8d93"
+    },
+    {
+      "path": "analysis/stage2/cybergear_dims-03.png",
+      "bytes": 511490,
+      "sha256": "3594bda74292eabcc181ed8bf6fd4ce96fe0fbcd24545bf9a82cd20c521b1f3f"
+    },
+    {
+      "path": "analysis/stage2/cybergear_interface_data.json",
+      "bytes": 1214,
+      "sha256": "288694b7b1e1e6bd51892831aadc49e3db7981561b1857fa68c3c1a4b316a875"
+    },
+    {
+      "path": "analysis/stage2/cybergear_manual.txt",
+      "bytes": 33229,
+      "sha256": "6ff6ab10f347b62aade2a7dee47e7f7b8294e811f80363a5ccaec191ab7800c1"
+    },
+    {
+      "path": "analysis/stage2/cybergear_mesh_bounds.json",
+      "bytes": 525,
+      "sha256": "28982f661f6a68c49868851aa16a35232907cfc84abef565d4b134736f3669be"
+    },
+    {
+      "path": "analysis/stage2/cybergear_plane_loops.json",
+      "bytes": 7591,
+      "sha256": "1a3d58cfe2eb0ed3b14c9fd4af93a0d89b3a72c9d6dd2767148bf11efd6d30ff"
+    },
+    {
+      "path": "analysis/stage2/deliverable_checks.json",
+      "bytes": 9165,
+      "sha256": "0675d55d8f181bc8ec8f46d2aee38019a6f9f1cbd5d024d151f07d6518122c56"
+    },
+    {
+      "path": "analysis/stage2/environment.json",
+      "bytes": 630,
+      "sha256": "452573a46e1e18d2519435a9586190989adb1af06b8e9bd2919dce00a881f12c"
+    },
+    {
+      "path": "analysis/stage2/gui_review.log",
+      "bytes": 106,
+      "sha256": "51aa15edcbc88bc849e3f0c6abaf318c764245095ad9440abc1c973de5e4db54"
+    },
+    {
+      "path": "analysis/stage2/master_checks.json",
+      "bytes": 4716,
+      "sha256": "be340d272faff17279405fce34fc69ffcb9bfcf8bc904da9f486d4b78944b1f6"
+    },
+    {
+      "path": "analysis/stage2/parol6_fold-056.png",
+      "bytes": 185951,
+      "sha256": "47219762c14f316235787ad7d9d8679a763db2d594ccf2386bdf063ba98b8193"
+    },
+    {
+      "path": "analysis/stage2/parol6_import.json",
+      "bytes": 3915,
+      "sha256": "37a442e57490a0c528de78409802e3f8571e033e7b3cbe8bea88bb09e66d44d9"
+    },
+    {
+      "path": "analysis/stage2/parol6_manual.txt",
+      "bytes": 26126,
+      "sha256": "d822a7c32dce7f4068479338e2f68c0f90a59d4fd3d3fe93974f86f1948886ab"
+    },
+    {
+      "path": "analysis/stage2/parol6_upper-053.png",
+      "bytes": 111331,
+      "sha256": "b905dbc44269f81c5818b2d5ba31eb9d32c9d11655819b8ded9349c96eca5742"
+    },
+    {
+      "path": "analysis/stage2/parol6_wrist-026.png",
+      "bytes": 133581,
+      "sha256": "44332c43ee32163eeeda460fe27704a02b0344eca85f1ec0d5efb70ca69befd5"
+    },
+    {
+      "path": "analysis/stage2/stow_margin_check.json",
+      "bytes": 3734,
+      "sha256": "db5793c9b00a1bbbe66f3d3378e908e00834fe71c4a698f9050dc875ed86ba40"
+    },
+    {
+      "path": "analysis/stage2/thor_assembly_check.json",
+      "bytes": 1487,
+      "sha256": "fa31feec8a09cbe299a199fce686d4b19726baf75cd5b40970492f8a2be27799"
+    },
+    {
+      "path": "mechanical/README.md",
+      "bytes": 2737,
+      "sha256": "d355f4c5d887f22ee1816affd5d48dd84a945aeb99897162192af8239fd2c8f0"
+    },
+    {
+      "path": "reference/cybergear/README.md",
+      "bytes": 2291,
+      "sha256": "da21ca940d607e14843d56db56064efe861d508924493c556e5c1c6a96a6f53c"
+    }
+  ],
+  "references": [
+    {
+      "name": "PAROL6",
+      "path": "reference/PAROL6",
+      "commit": "3892e9c85c1f6d8041cda01c47c9db9d18b30ad8",
+      "remote": "https://github.com/Source-Robotics/PAROL6-Desktop-robot-arm.git",
+      "status": ""
+    },
+    {
+      "name": "Thor",
+      "path": "reference/Thor",
+      "commit": "286b081fe6f056d87c379b884781ef77ff6a0159",
+      "remote": "https://github.com/AngelLM/Thor.git",
+      "status": ""
+    },
+    {
+      "name": "CyberGear",
+      "path": "reference/cybergear/upstream",
+      "commit": "db450fa86455ab1edd0c744fc6aef4e810573014",
+      "remote": "https://github.com/freezeLUO/CyberGear.git",
+      "status": ""
+    }
+  ],
+  "user_original_sha256": "e1bf9c8fe0187b5db73f36c63d0125ffc5f59e8688d3b2b08b8d5f67b80ac2d5"
+}

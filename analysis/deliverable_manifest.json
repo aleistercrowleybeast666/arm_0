@@ -1,0 +1,151 @@
+{
+  "date": "2026-09-14",
+  "original_assembly_unchanged": true,
+  "files": [
+    {
+      "path": "mechanical\\parameters.json",
+      "bytes": 1172,
+      "sha256": "b4c386b06c68f3d36dc81ba4a92cc6c5535625dcf7de91f4d360de64ded6e2cd"
+    },
+    {
+      "path": "mechanical\\README.md",
+      "bytes": 2228,
+      "sha256": "b6ef073cdb30bb97b525a0719433295c1b5634dcef56f2e8b65ef8d1343ea228"
+    },
+    {
+      "path": "mechanical\\docs\\concept_layout.md",
+      "bytes": 4936,
+      "sha256": "b8c0026837ca808668c1294da948ea3222347c243e9d7b1cf068bc7153ff8761"
+    },
+    {
+      "path": "mechanical\\docs\\handoff.md",
+      "bytes": 2810,
+      "sha256": "41a56f443e62b216503e79f888979f1576f6e518c357a3416efaf8e68716beab"
+    },
+    {
+      "path": "mechanical\\docs\\reference_review.md",
+      "bytes": 4379,
+      "sha256": "53218fe58414252a9841514c5b06ba2a22224e0a4db69e9124367466d633c13a"
+    },
+    {
+      "path": "mechanical\\docs\\validation_report.md",
+      "bytes": 4210,
+      "sha256": "2e70f01f63b5f82e1240dbe621228b1ca779e76f4c9dd1be986e33116c7194ef"
+    },
+    {
+      "path": "mechanical\\exports\\Arm_v1_CAKE_APPROACH.step",
+      "bytes": 103518,
+      "sha256": "2ce6543e7165a18597ef04fae6da78d270df904e2e472e8d0e392ccc6ea06b9b"
+    },
+    {
+      "path": "mechanical\\exports\\Arm_v1_EXTENDED.step",
+      "bytes": 94969,
+      "sha256": "7a6dbcd3635074adfe6e7c74dc03ff565bee3d92d0a6ef27cc3394f6ae05f4b7"
+    },
+    {
+      "path": "mechanical\\exports\\Arm_v1_HOME.step",
+      "bytes": 105818,
+      "sha256": "cf7402ee351322d118e0cee23df41eb40c86eb18531cabf603d16f964c3c5d4b"
+    },
+    {
+      "path": "mechanical\\exports\\Arm_v1_SAFE_UNFOLD.step",
+      "bytes": 106772,
+      "sha256": "c3e4dd6da9b4991fca7450bcf86c4b38a3412b8ffaa0be7afbfbaf28ddc57210"
+    },
+    {
+      "path": "mechanical\\exports\\Arm_v1_STOW.step",
+      "bytes": 106829,
+      "sha256": "2bcfb42b6b1aa89dc634b460a88b64c4daa8caeade2f1cbc7538c9a39ea56fc8"
+    },
+    {
+      "path": "mechanical\\exports\\layout_preview.png",
+      "bytes": 501214,
+      "sha256": "d000912c130e9154a277471c6b0472d9c5540a781fbd1a36f90f3aadfcaccb38"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_CAKE_APPROACH.20260914-083111.FCBak",
+      "bytes": 37773,
+      "sha256": "47fb5bdb204657f3e89fe7ac8ba91756ff53463dd3709990d7b06cd3382a79ff"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_CAKE_APPROACH.FCStd",
+      "bytes": 59873,
+      "sha256": "18f3e99d6df36829516cece77d6b3b7d8c4f32fd49922cb82cc72b013ea3c1b2"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_EXTENDED.20260914-082708.FCBak",
+      "bytes": 35891,
+      "sha256": "bda56b5dcb15a767e4b3cb9d90de8eb030a45d258b419c0d80aae23d5c1d52a0"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_EXTENDED.FCStd",
+      "bytes": 57957,
+      "sha256": "266ab381798aefba947f0ddf6d03cbe7a8e8b50a7ea5fa130ea73b93f3b77f13"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_HOME.20260914-082705.FCBak",
+      "bytes": 37932,
+      "sha256": "72279070ee825002de11abba3fb4eacdf8705e9fafccf407846a4e8b0838192e"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_HOME.FCStd",
+      "bytes": 59902,
+      "sha256": "b2fab8eeb1494e4a6d0d195174a514f1c5e3b1f037714c7c39688197c1ee31c1"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_SAFE_UNFOLD.20260914-082707.FCBak",
+      "bytes": 38237,
+      "sha256": "79e9ab762174d4dc26b1717c277c9e3d0fbae6ee17490d9df0b8c6189c9a3843"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_SAFE_UNFOLD.FCStd",
+      "bytes": 60294,
+      "sha256": "28cc951975392459a2c3692f48b5f5318be7fc471c051f7d41ad40be1a975c4d"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_STOW.20260914-082706.FCBak",
+      "bytes": 38255,
+      "sha256": "93f88c509f4b405645c9df7139b26e1e10e340230dd6d95fe5e528cab62d407f"
+    },
+    {
+      "path": "mechanical\\freecad\\Arm_v1_STOW.FCStd",
+      "bytes": 60250,
+      "sha256": "aab8f1aca22d952e8a290e029b628789928215c42628b3c64152e045aaf031bf"
+    },
+    {
+      "path": "mechanical\\scripts\\arm_model.py",
+      "bytes": 14284,
+      "sha256": "3d2cb59f53201d6b1687ceb7a76a43f6bed23026322a88779b72eb90a30ca495"
+    },
+    {
+      "path": "mechanical\\scripts\\build.ps1",
+      "bytes": 360,
+      "sha256": "a7de2bae223d86d03b91ef9caa30c43c2583ac76e4497b1d2e98297cccb3faa2"
+    },
+    {
+      "path": "mechanical\\scripts\\BuildArm.FCMacro",
+      "bytes": 429,
+      "sha256": "18cea24e76a9e3676e14c7c9b4c0daab9b97b19344e8949b4afc69c88c16c38f"
+    },
+    {
+      "path": "mechanical\\scripts\\RebuildFromSheet.FCMacro",
+      "bytes": 919,
+      "sha256": "9cc2c7a35d8e6fb4fe229da0d1eab99635161263430dfbc9bf19189a4abc600b"
+    },
+    {
+      "path": "mechanical\\scripts\\render_preview.py",
+      "bytes": 3386,
+      "sha256": "793faa34703359811986ec7348dc5e2fe8de9bb5e017347f3437b499052df63b"
+    },
+    {
+      "path": "mechanical\\scripts\\StyleDocuments.FCMacro",
+      "bytes": 1473,
+      "sha256": "27f01d1196c0ccf18acb9f1d4c7d8144c9f101cccdaff7625b8947d0de5ce988"
+    },
+    {
+      "path": "mechanical\\scripts\\validate_layout.py",
+      "bytes": 4412,
+      "sha256": "fd626d90203d262579fd422735bbaf12be82cfcf929524b957a2e39d60692c73"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "urdf": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\urdf\\PAROL6.urdf",
+  "pose": "all joint angles zero",
+  "joints": [
+    {
+      "name": "base_joint",
+      "parent": "world",
+      "child": "base_link",
+      "origin_world_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "L1",
+      "parent": "base_link",
+      "child": "L1",
+      "origin_world_mm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_world": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "L2",
+      "parent": "L1",
+      "child": "L2",
+      "origin_world_mm": [
+        23.4207210610375,
+        0.0,
+        110.5
+      ],
+      "axis_world": [
+        0.0,
+        1.0000000000000002,
+        -3.4416913763379853e-15
+      ]
+    },
+    {
+      "name": "L3",
+      "parent": "L2",
+      "child": "L3",
+      "origin_world_mm": [
+        23.4207210610375,
+        6.195044477408373e-13,
+        290.5
+      ],
+      "axis_world": [
+        -7.3464102064990655e-06,
+        0.999999999973015,
+        -2.6988300483310468e-11
+      ]
+    },
+    {
+      "name": "L4",
+      "parent": "L3",
+      "child": "L4",
+      "origin_world_mm": [
+        23.420561276615505,
+        7.692180226115397e-13,
+        333.9999999997065
+      ],
+      "axis_world": [
+        0.9999999999662691,
+        7.346410203123366e-06,
+        3.673205100085397e-06
+      ]
+    },
+    {
+      "name": "L5",
+      "parent": "L4",
+      "child": "L5",
+      "origin_world_mm": [
+        199.77056127066706,
+        0.0012955394400900235,
+        334.00064776942594
+      ],
+      "axis_world": [
+        -1.1019615306195885e-05,
+        0.9999999999392839,
+        -4.048061885697507e-11
+      ]
+    },
+    {
+      "name": "L6",
+      "parent": "L5",
+      "child": "L6",
+      "origin_world_mm": [
+        199.77056127066706,
+        0.0012955394400900235,
+        334.00064776942594
+      ],
+      "axis_world": [
+        0.999999999966269,
+        7.346410203044865e-06,
+        3.6732051002519306e-06
+      ]
+    }
+  ],
+  "meshes": [
+    {
+      "link": "base_link",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\base_link.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 60436
+    },
+    {
+      "link": "L1",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\L1.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 52358
+    },
+    {
+      "link": "L2",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\L2.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 32414
+    },
+    {
+      "link": "L3",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\L3.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 2858
+    },
+    {
+      "link": "L4",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\L4.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 7108
+    },
+    {
+      "link": "L5",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\L5.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 23468
+    },
+    {
+      "link": "L6",
+      "file": "reference\\PAROL6\\PAROL6_URDF\\PAROL6\\meshes\\L6.STL",
+      "stl_scale_to_mm": [
+        1000.0,
+        1000.0,
+        1000.0
+      ],
+      "facets": 5762
+    }
+  ],
+  "note": "STL numbers and URDF xyz both in meters; both scaled to mm. Reference geometry excluded from Robot_Master."
+}

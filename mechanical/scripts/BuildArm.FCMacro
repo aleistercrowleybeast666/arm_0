@@ -1,0 +1,14 @@
+from pathlib import Path
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+
+script_dir = Path(__file__).resolve().parent
+sys.path.insert(0, str(script_dir))
+import arm_model
+import importlib
+importlib.reload(arm_model)
+config = arm_model.Arm_LoadConfig()
+doc, frames, parts, axes = arm_model.Arm_BuildDocument(config, "HOME")
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

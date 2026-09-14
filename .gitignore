@@ -1,0 +1,28 @@
+# Downloaded upstream repositories stay local; do not vendor or add as submodules.
+/reference/
+
+# Original external SolidWorks model supplied before this project.
+/708小米电机SLDASM.SLDASM
+
+# Derived reference files containing upstream meshes or document pages.
+/mechanical/freecad/PAROL6_reference_assembly.FCStd
+/mechanical/freecad/CyberGear_Detail.FCStd
+/mechanical/exports/PAROL6_reference_assembly.png
+/mechanical/exports/CyberGear_Detail.png
+/analysis/stage2/parol6_*.png
+/analysis/stage2/cybergear*.png
+/analysis/stage2/*_manual.txt
+
+# FreeCAD backups, Python caches and local editor/runtime state.
+*.FCBak
+*.FCStd[0-9]*
+*.FCStd.bak
+__pycache__/
+*.py[cod]
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+/.codex/
+/.agents/
+/.venv/

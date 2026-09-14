@@ -1,0 +1,44 @@
+[
+  {
+    "name": "AssemblyBase",
+    "linked_file": "D:/3D_model/Arm/reference/Thor/freecad-src/AssemblyBase.FCStd",
+    "shape_null": false,
+    "solids": 321,
+    "bounds": "BoundBox (-223.6, -127.452, -1.0876e-13, 127.452, 127.452, 98)"
+  },
+  {
+    "name": "AssemblyArt1",
+    "linked_file": "D:/3D_model/Arm/reference/Thor/freecad-src/AssemblyArt1.FCStd",
+    "shape_null": false,
+    "solids": 158,
+    "bounds": "BoundBox (-81.1798, -81.1791, 49, 81.1791, 81.1797, 265.561)"
+  },
+  {
+    "name": "AssemblyArt2",
+    "linked_file": "D:/3D_model/Arm/reference/Thor/freecad-src/AssemblyArt2.FCStd",
+    "shape_null": false,
+    "solids": 164,
+    "bounds": "BoundBox (-69.8281, -70, 132.172, 69.8281, 70, 431.828)"
+  },
+  {
+    "name": "AssemblyArt3",
+    "linked_file": "D:/3D_model/Arm/reference/Thor/freecad-src/AssemblyArt3.FCStd",
+    "shape_null": false,
+    "solids": 149,
+    "bounds": "BoundBox (-55.05, -55.05, 298, 55.05, 55.05, 450.5)"
+  },
+  {
+    "name": "AssemblyArt4",
+    "linked_file": "D:/3D_model/Arm/reference/Thor/freecad-src/AssemblyArt4.FCStd",
+    "shape_null": false,
+    "solids": 191,
+    "bounds": "BoundBox (-1e+100, -1e+100, -1e+100, 1e+100, 1e+100, 1e+100)"
+  },
+  {
+    "name": "AssemblyArt56",
+    "linked_file": "D:/3D_model/Arm/reference/Thor/freecad-src/AssemblyArt56.FCStd",
+    "shape_null": false,
+    "solids": 120,
+    "bounds": "BoundBox (-1e+100, -1e+100, -1e+100, 1e+100, 1e+100, 1e+100)"
+  }
+]

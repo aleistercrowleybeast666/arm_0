@@ -1,0 +1,24 @@
+{
+  "schema": "Arm.Master.v2",
+  "units": "mm / deg",
+  "dimensions": {
+    "BaseHeight": 180, "UpperArm": 320, "Forearm": 290,
+    "Wrist": 60, "Flange": 35, "Tool": 90, "MotorCount": 6,
+    "FoldLane": 70, "UpperLane": -62,
+    "J1_base_radius": 105, "J2_shoulder_width": 110, "J3_yoke_width": 110,
+    "link_wall": 4, "rib_thickness": 4, "bearing_allowance": 0.2,
+    "assembly_clearance": 2, "print_clearance": 0.3, "cable_channel": 14,
+    "upper_box_width": 36, "upper_box_height": 48, "upper_bend_offset": 24, "upper_split_x": 180,
+    "m3_clearance": 3.4, "m4_clearance": 4.5, "m5_clearance": 5.5,
+    "insert_pilot_diameter": 4.6, "insert_depth": 5, "m4_insert_pilot": 6.2,
+    "bearing_outer": 42, "bearing_inner": 20, "bearing_width": 12
+  },
+  "confirmed_baseline": ["BaseHeight","UpperArm","Forearm","Wrist","Flange","Tool","MotorCount"],
+  "status_of_other_dimensions": "PROVISIONAL; bearing envelopes are 20x42x12 placeholders, not released selection",
+  "poses": {
+    "HOME": [0,45,65,0,-80,0],
+    "STOW": [0,75,165,180,90,0],
+    "SAFE_UNFOLD": [0,75,90,180,90,0],
+    "CAKE_APPROACH": [0,57.9411879239,-77.3316061352,0,-70.6095817887,0]
+  }
+}

@@ -1,0 +1,22 @@
+from pathlib import Path
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import arm_model
+import importlib
+importlib.reload(arm_model)
+old = App.ActiveDocument
+if old is None or old.getObject("MasterParameters") is None:
+    raise ValueError("Open an Arm v1 document with MasterParameters first")
+old.recompute()
+config = arm_model.Arm_LoadConfig()
+for key in config["dimensions"]:
+    config["dimensions"][key] = float(old.MasterParameters.get(key))
+q = [float(old.MasterParameters.get("Joint"+str(i)+"Angle")) for i in range(1,7)]
+# Create a separate unsaved document so the original is preserved for comparison.
+doc, frames, parts, axes = arm_model.Arm_BuildDocument(config, "CUSTOM", q, save=False)
+print(arm_model.Arm_CheckGeometry(parts, full=True))
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

@@ -1,0 +1,23 @@
+{
+  "pwd": "D:\\3D_model\\Arm",
+  "commands": [
+    {
+      "command": "git status",
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+    },
+    {
+      "command": "git branch --show-current",
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+    },
+    {
+      "command": "git log -5 --oneline",
+      "exit_code": 128,
+      "stdout": "",
+      "stderr": "fatal: not a git repository (or any of the parent directories): .git\n"
+    }
+  ]
+}

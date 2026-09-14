@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "length_unit": "mm",
+  "angle_unit": "deg",
+  "dimensions": {
+    "BaseHeight": 180,
+    "UpperArm": 320,
+    "Forearm": 290,
+    "Wrist": 60,
+    "Flange": 35,
+    "Tool": 90,
+    "MotorDiameter": 80,
+    "MotorLength": 50,
+    "FoldLane": 70,
+    "UpperLane": -75,
+    "RailWidth": 20,
+    "RailHeight": 36,
+    "ClearanceTarget": 5
+  },
+  "poses": {
+    "HOME": [0, 45, 65, 0, -80, 0],
+    "STOW": [0, 75, 175, 180, 90, 0],
+    "SAFE_UNFOLD": [0, 75, 90, 180, 90, 0],
+    "EXTENDED": [0, 0, 0, 0, 0, 0]
+  },
+  "motor_model": {
+    "mode": "envelope",
+    "verified_dimensions": false,
+    "source": "Engineering placeholders; not manufacturer dimensions",
+    "optional_step": "reference/cybergear/cybergear.step",
+    "step_local_axis": "+Z",
+    "step_local_origin": "stator rear face center",
+    "note": "STEP is for later manual replacement; automatic geometry uses envelopes only."
+  },
+  "task_assumptions": {
+    "TargetRadius": 650,
+    "CakeCenter": [500, 70, 150],
+    "CakeRadius": 100,
+    "CakeHeight": 100,
+    "confirmed": false,
+    "note": "No ArmDesigner simulation files or sketch image supplied in this workspace."
+  }
+}

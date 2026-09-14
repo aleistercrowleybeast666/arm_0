@@ -1,0 +1,211 @@
+{
+  "poses": {
+    "HOME": {
+      "tested_pairs": 688,
+      "collisions": [],
+      "cable_reserve_conflicts": [],
+      "minimum_motor_distance_mm": 19.925879999999992,
+      "minimum_motor_pair": [
+        "J5_CyberGear_Stator",
+        "J6_CyberGear_Stator"
+      ],
+      "angles_deg": [
+        0,
+        45,
+        65,
+        0,
+        -80,
+        0
+      ],
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        214.8202952887661,
+        70.0,
+        797.6665872547632
+      ]
+    },
+    "STOW": {
+      "tested_pairs": 688,
+      "collisions": [],
+      "cable_reserve_conflicts": [],
+      "minimum_motor_distance_mm": 19.925879999999992,
+      "minimum_motor_pair": [
+        "J5_CyberGear_Stator",
+        "J6_CyberGear_Stator"
+      ],
+      "angles_deg": [
+        0,
+        75,
+        165,
+        180,
+        90,
+        0
+      ],
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        -200.43108104024827,
+        69.99999999999999,
+        248.48737308794844
+      ]
+    },
+    "SAFE_UNFOLD": {
+      "tested_pairs": 688,
+      "collisions": [],
+      "cable_reserve_conflicts": [],
+      "minimum_motor_distance_mm": 19.925880000000006,
+      "minimum_motor_pair": [
+        "J5_CyberGear_Stator",
+        "J6_CyberGear_Stator"
+      ],
+      "angles_deg": [
+        0,
+        75,
+        90,
+        180,
+        90,
+        0
+      ],
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        -222.8995641305522,
+        70.0,
+        700.4236584845175
+      ]
+    },
+    "CAKE_APPROACH": {
+      "tested_pairs": 688,
+      "collisions": [],
+      "cable_reserve_conflicts": [],
+      "minimum_motor_distance_mm": 19.92588,
+      "minimum_motor_pair": [
+        "J5_CyberGear_Stator",
+        "J6_CyberGear_Stator"
+      ],
+      "angles_deg": [
+        0,
+        57.9411879239,
+        -77.3316061352,
+        0,
+        -70.6095817887,
+        0
+      ],
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        500.0000000001044,
+        70.0,
+        210.0000000000352
+      ]
+    }
+  },
+  "printed_part_validity": [
+    {
+      "name": "J1_BaseTray",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 429563.56630475435
+    },
+    {
+      "name": "J1_MotorMount",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 41137.8363298438
+    },
+    {
+      "name": "J1_BearingSeat",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 72922.4994494752
+    },
+    {
+      "name": "J1_RotatingPlatform",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 116972.19846001787
+    },
+    {
+      "name": "J2_LeftMotorCheek",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 59398.51973583789
+    },
+    {
+      "name": "J2_RightBearingCheek",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 58473.63951480368
+    },
+    {
+      "name": "J2_BearingRetainer",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6704.127306834083
+    },
+    {
+      "name": "Upper_RemovableLid",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 36229.56318694143
+    },
+    {
+      "name": "J3_FixedMotorPlate",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 41137.83632984385
+    },
+    {
+      "name": "J3_RemovableBearingCheek",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 59358.44722923346
+    },
+    {
+      "name": "J3_BearingRetainer",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 6704.127306834084
+    },
+    {
+      "name": "Forearm_Box",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 108748.6861165257
+    },
+    {
+      "name": "Forearm_Lid",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 33985.835285603935
+    },
+    {
+      "name": "Upper_MainShell_Proximal",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 146808.21120881487
+    },
+    {
+      "name": "Upper_MainShell_Distal",
+      "valid": true,
+      "solids": 1,
+      "volume_mm3": 333748.41459665337
+    }
+  ],
+  "freecad_version": [
+    "1",
+    "1",
+    "3",
+    "20260725 (Git shallow)",
+    "Unknown",
+    "2026/07/25 04:52:02",
+    "grafted,grafted",
+    "145529fe741292ff0b3977a01195bf0247425794"
+  ],
+  "config_sha256": "0d97f05aec0e54405a60ced94a8087c72f48552e5fde520e119383d7e9b65d1c",
+  "geometry_script_sha256": "1b1d30132452bc470908f42cff2953fe6c8ff162387f61736c1738dd265e28ce",
+  "same_rigid_overlaps": {
+    "tested_pairs": 132,
+    "collisions": [],
+    "cable_reserve_conflicts": [],
+    "minimum_motor_distance_mm": null,
+    "minimum_motor_pair": []
+  }
+}

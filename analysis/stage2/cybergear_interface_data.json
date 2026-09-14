@@ -1,0 +1,80 @@
+{
+  "body_diameter": 75.0,
+  "body_length": 25.0,
+  "total_depth": 36.5,
+  "rear_diameter": 63.0,
+  "rear_length": 8.5,
+  "fixed_plane_z": -3.0,
+  "output_diameter": 32.0,
+  "output_depth": 8.0,
+  "fixed_holes_xy": [
+    [
+      -31.03418,
+      -21.05064
+    ],
+    [
+      -37.30465,
+      3.82266
+    ],
+    [
+      -26.11987,
+      26.9073
+    ],
+    [
+      -2.7133,
+      37.40171
+    ],
+    [
+      21.96285,
+      30.39545
+    ],
+    [
+      36.36233,
+      9.16682
+    ],
+    [
+      33.74748,
+      -16.35107
+    ],
+    [
+      15.34181,
+      -34.21811
+    ],
+    [
+      -10.24247,
+      -36.07412
+    ]
+  ],
+  "output_holes_xy": [
+    [
+      8.4499,
+      8.52051
+    ],
+    [
+      -11.60393,
+      3.05757
+    ],
+    [
+      11.60393,
+      -3.05757
+    ],
+    [
+      3.15403,
+      -11.57809
+    ],
+    [
+      -8.4499,
+      -8.52052
+    ],
+    [
+      -3.15403,
+      11.57809
+    ]
+  ],
+  "mesh_to_canonical_translation": [
+    -40.8229898,
+    -79.0031928,
+    0.14544068
+  ],
+  "provenance": "Nominal diameters: CAD.png / manual p3; depth and hole coordinates: third-party STL. Hardware verification required."
+}

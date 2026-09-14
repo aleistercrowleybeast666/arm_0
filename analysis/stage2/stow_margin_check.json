@@ -1,0 +1,178 @@
+{
+  "165": {
+    "tested_pairs": 688,
+    "collisions": [],
+    "cable_reserve_conflicts": [],
+    "minimum_motor_distance_mm": 19.925879999999992,
+    "minimum_motor_pair": [
+      "J5_CyberGear_Stator",
+      "J6_CyberGear_Stator"
+    ],
+    "shoulder_to_J4_mm": 9.241545074928661
+  },
+  "168": {
+    "tested_pairs": 688,
+    "collisions": [
+      {
+        "pair": [
+          "J2_RightBearingCheek",
+          "J4_MountHousing"
+        ],
+        "volume_mm3": 2.425,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      }
+    ],
+    "cable_reserve_conflicts": [],
+    "minimum_motor_distance_mm": 19.925880000000006,
+    "minimum_motor_pair": [
+      "J5_CyberGear_Stator",
+      "J6_CyberGear_Stator"
+    ],
+    "shoulder_to_J4_mm": 0.0
+  },
+  "170": {
+    "tested_pairs": 688,
+    "collisions": [
+      {
+        "pair": [
+          "J2_RightBearingCheek",
+          "J4_MountHousing"
+        ],
+        "volume_mm3": 237.652,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      }
+    ],
+    "cable_reserve_conflicts": [],
+    "minimum_motor_distance_mm": 19.925880000000006,
+    "minimum_motor_pair": [
+      "J5_CyberGear_Stator",
+      "J6_CyberGear_Stator"
+    ],
+    "shoulder_to_J4_mm": 0.0
+  },
+  "175": {
+    "tested_pairs": 688,
+    "collisions": [
+      {
+        "pair": [
+          "J6_CyberGear_Stator",
+          "J2_RightBearingCheek"
+        ],
+        "volume_mm3": 2.714,
+        "roles": [
+          "motor",
+          "printed"
+        ]
+      },
+      {
+        "pair": [
+          "J1_RotatingPlatform",
+          "J6_PitchCarrier"
+        ],
+        "volume_mm3": 82.854,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J2_RightBearingCheek",
+          "J4_MountHousing"
+        ],
+        "volume_mm3": 1253.973,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J2_RightBearingCheek",
+          "J5_RollCarrier"
+        ],
+        "volume_mm3": 165.139,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J2_RightBearingCheek",
+          "J6_PitchCarrier"
+        ],
+        "volume_mm3": 993.989,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J2_BearingRetainer",
+          "J4_MountHousing"
+        ],
+        "volume_mm3": 118.435,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J2_BearingRetainer",
+          "J5_RollCarrier"
+        ],
+        "volume_mm3": 15.822,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J2_BearingRetainer",
+          "J6_PitchCarrier"
+        ],
+        "volume_mm3": 25.205,
+        "roles": [
+          "printed",
+          "blockout"
+        ]
+      },
+      {
+        "pair": [
+          "J4_MountHousing",
+          "Upper_MainShell_Proximal"
+        ],
+        "volume_mm3": 436.769,
+        "roles": [
+          "blockout",
+          "printed"
+        ]
+      }
+    ],
+    "cable_reserve_conflicts": [
+      {
+        "pair": [
+          "J6_CableReserve",
+          "J1_RotatingPlatform"
+        ],
+        "volume_mm3": 504.187
+      }
+    ],
+    "minimum_motor_distance_mm": 19.925879999999978,
+    "minimum_motor_pair": [
+      "J5_CyberGear_Stator",
+      "J6_CyberGear_Stator"
+    ],
+    "shoulder_to_J4_mm": 0.0
+  }
+}

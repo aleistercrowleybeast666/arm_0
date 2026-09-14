@@ -1,0 +1,366 @@
+{
+  "HOME": {
+    "tested_pairs": 547,
+    "collisions": [],
+    "clearance_under_5mm": [
+      {
+        "pair": [
+          "Motor_J2",
+          "J2_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J2",
+          "Upper_RootArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J3",
+          "J3_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "J4_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "Wrist_SideArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "J5_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputSide"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputBack"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Base_Shell",
+          "Shoulder_Foot"
+        ],
+        "distance_mm": 3.0
+      }
+    ],
+    "min_motor_clearance": {
+      "distance_mm": 10.0,
+      "pair": [
+        "Motor_J5",
+        "Motor_J6"
+      ]
+    },
+    "invalid_shapes": [],
+    "angles_deg": [
+      0,
+      45,
+      65,
+      0,
+      -80,
+      0
+    ],
+    "tcp_mm": [
+      214.8202952887661,
+      70.0,
+      797.6665872547632
+    ],
+    "minimum_z_mm": 0.0
+  },
+  "STOW": {
+    "tested_pairs": 547,
+    "collisions": [],
+    "clearance_under_5mm": [
+      {
+        "pair": [
+          "Motor_J2",
+          "J2_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J2",
+          "Upper_RootArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J3",
+          "J3_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "J4_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "Wrist_SideArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "J5_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputSide"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputBack"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Base_Shell",
+          "Shoulder_Foot"
+        ],
+        "distance_mm": 3.0
+      }
+    ],
+    "min_motor_clearance": {
+      "distance_mm": 10.0,
+      "pair": [
+        "Motor_J5",
+        "Motor_J6"
+      ]
+    },
+    "invalid_shapes": [],
+    "angles_deg": [
+      0,
+      75,
+      175,
+      180,
+      90,
+      0
+    ],
+    "tcp_mm": [
+      -154.34653332941593,
+      69.99999999999999,
+      202.95636505314246
+    ],
+    "minimum_z_mm": 0.0
+  },
+  "SAFE_UNFOLD": {
+    "tested_pairs": 547,
+    "collisions": [],
+    "clearance_under_5mm": [
+      {
+        "pair": [
+          "Motor_J2",
+          "J2_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J2",
+          "Upper_RootArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J3",
+          "J3_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "J4_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "Wrist_SideArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "J5_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputSide"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputBack"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Base_Shell",
+          "Shoulder_Foot"
+        ],
+        "distance_mm": 3.0
+      }
+    ],
+    "min_motor_clearance": {
+      "distance_mm": 10.0,
+      "pair": [
+        "Motor_J5",
+        "Motor_J6"
+      ]
+    },
+    "invalid_shapes": [],
+    "angles_deg": [
+      0,
+      75,
+      90,
+      180,
+      90,
+      0
+    ],
+    "tcp_mm": [
+      -222.8995641305522,
+      70.0,
+      700.4236584845175
+    ],
+    "minimum_z_mm": 0.0
+  },
+  "EXTENDED": {
+    "tested_pairs": 547,
+    "collisions": [],
+    "clearance_under_5mm": [
+      {
+        "pair": [
+          "Motor_J2",
+          "J2_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J2",
+          "Upper_RootArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J3",
+          "J3_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "J4_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J4",
+          "Wrist_SideArm"
+        ],
+        "distance_mm": 4.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "J5_Output"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputSide"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Motor_J5",
+          "Wrist_OutputBack"
+        ],
+        "distance_mm": 2.0
+      },
+      {
+        "pair": [
+          "Base_Shell",
+          "Shoulder_Foot"
+        ],
+        "distance_mm": 3.0
+      }
+    ],
+    "min_motor_clearance": {
+      "distance_mm": 10.0,
+      "pair": [
+        "Motor_J5",
+        "Motor_J6"
+      ]
+    },
+    "invalid_shapes": [],
+    "angles_deg": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "tcp_mm": [
+      795.0,
+      70.0,
+      180.0
+    ],
+    "minimum_z_mm": 0.0
+  }
+}

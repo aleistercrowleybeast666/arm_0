@@ -1,0 +1,178 @@
+{
+  "sweeps": {
+    "wrist_inboard": {
+      "sample_count": 56,
+      "bad_samples": 13,
+      "first_bad": {
+        "q_deg": [
+          0,
+          75,
+          168,
+          0,
+          -90,
+          0
+        ],
+        "collisions": [
+          {
+            "pair": [
+              "Motor_J2",
+              "Motor_J5"
+            ],
+            "volume_mm3": 1788.296
+          },
+          {
+            "pair": [
+              "Motor_J2",
+              "J5_Mount"
+            ],
+            "volume_mm3": 1222.431
+          }
+        ],
+        "min_motor_clearance": {
+          "distance_mm": 0.0,
+          "pair": [
+            "Motor_J2",
+            "Motor_J5"
+          ]
+        },
+        "minimum_z_mm": 0.0,
+        "tcp_mm": [
+          -187.4503959995807,
+          70.0,
+          233.99279341401643
+        ]
+      },
+      "min_motor_clearance_mm": 0.0
+    },
+    "wrist_outboard": {
+      "sample_count": 56,
+      "bad_samples": 0,
+      "first_bad": null,
+      "min_motor_clearance_mm": 10.0
+    }
+  },
+  "paths": {
+    "STOW_to_SAFE_UNFOLD": {
+      "sample_count": 30,
+      "bad_samples": 0,
+      "first_bad": null,
+      "min_motor_clearance_mm": 10.0
+    },
+    "SAFE_UNFOLD_to_WRIST_NEUTRAL": {
+      "sample_count": 31,
+      "bad_samples": 0,
+      "first_bad": null,
+      "min_motor_clearance_mm": 10.0
+    },
+    "WRIST_NEUTRAL_to_WRIST_TURNED": {
+      "sample_count": 61,
+      "bad_samples": 0,
+      "first_bad": null,
+      "min_motor_clearance_mm": 10.0
+    },
+    "WRIST_TURNED_to_HOME": {
+      "sample_count": 28,
+      "bad_samples": 0,
+      "first_bad": null,
+      "min_motor_clearance_mm": 10.0
+    }
+  },
+  "task_points": {
+    "cake_near": {
+      "q_deg": [
+        0,
+        74.52085802801237,
+        -100.51411095549331,
+        0,
+        -64.00674707251905,
+        0
+      ],
+      "collisions": [],
+      "min_motor_clearance": {
+        "distance_mm": 10.0,
+        "pair": [
+          "Motor_J5",
+          "Motor_J6"
+        ]
+      },
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        400.00000000000006,
+        70.00000000000001,
+        209.9999999999999
+      ]
+    },
+    "cake_center": {
+      "q_deg": [
+        0,
+        57.941187923915926,
+        -77.33160613523025,
+        0,
+        -70.60958178868567,
+        0
+      ],
+      "collisions": [],
+      "min_motor_clearance": {
+        "distance_mm": 10.0,
+        "pair": [
+          "Motor_J5",
+          "Motor_J6"
+        ]
+      },
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        499.9999999999999,
+        70.00000000000001,
+        209.99999999999977
+      ]
+    },
+    "cake_far": {
+      "q_deg": [
+        0,
+        37.90740784317161,
+        -44.73420202345228,
+        0,
+        -83.17320581971933,
+        0
+      ],
+      "collisions": [],
+      "min_motor_clearance": {
+        "distance_mm": 10.0,
+        "pair": [
+          "Motor_J5",
+          "Motor_J6"
+        ]
+      },
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        600.0,
+        70.0,
+        209.99999999999994
+      ]
+    },
+    "radius_650": {
+      "q_deg": [
+        0,
+        21.138770525935065,
+        -14.642410841321272,
+        0,
+        -96.4963596846138,
+        0
+      ],
+      "collisions": [],
+      "min_motor_clearance": {
+        "distance_mm": 10.0,
+        "pair": [
+          "Motor_J5",
+          "Motor_J6"
+        ]
+      },
+      "minimum_z_mm": 0.0,
+      "tcp_mm": [
+        646.2197768561404,
+        70.0,
+        210.0
+      ]
+    }
+  }
+}

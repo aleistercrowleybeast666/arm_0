@@ -1,0 +1,33 @@
+"""Run in a separate FreeCAD GUI process to save colors and useful cameras."""
+from pathlib import Path
+import FreeCAD as App
+import FreeCADGui as Gui
+import traceback
+
+root = Path(__file__).resolve().parents[1]
+log = root.parent / "analysis" / "gui_finish.log"
+colors = {"ground":(0.27,0.32,0.40),"yaw":(0.50,0.57,0.64),"upper":(0.12,0.42,0.64),
+          "fore":(0.1,0.66,0.63),"roll":(0.54,0.58,0.64),"pitch":(0.60,0.64,0.71),"tool":(0.84,0.33,0.24)}
+try:
+    lines = []
+    for path in sorted((root / "freecad").glob("Arm_v1_*.FCStd")):
+        doc = App.openDocument(str(path))
+        Gui.activeDocument().activeView().viewAxonometric()
+        for obj in doc.Objects:
+            if hasattr(obj,"RigidOwner"):
+                obj.ViewObject.ShapeColor = (0.92,0.60,0.13) if obj.Role == "motor" else colors[obj.RigidOwner]
+                obj.ViewObject.LineColor = (0.15,0.18,0.22)
+            if obj.Name.startswith("Axis_") or obj.Name == "Centerline":
+                obj.ViewObject.LineColor = (0.90,0.18,0.25)
+                obj.ViewObject.LineWidth = 2
+                obj.ViewObject.Visibility = False
+        Gui.activeDocument().activeView().fitAll()
+        doc.recompute()
+        doc.save()
+        lines.append(path.name+" colored and saved")
+        App.closeDocument(doc.Name)
+    log.write_text("\n".join(lines),encoding="utf-8")
+except Exception:
+    log.write_text(traceback.format_exc(),encoding="utf-8")
+finally:
+    Gui.getMainWindow().close()

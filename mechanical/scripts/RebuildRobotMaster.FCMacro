@@ -1,0 +1,16 @@
+from pathlib import Path
+import sys
+import FreeCAD as App
+import FreeCADGui as Gui
+sys.path.insert(0,str(Path(__file__).resolve().parent))
+import build_robot_master as robot
+old=App.ActiveDocument
+if not old or not old.getObject("MasterParameters"):
+    raise ValueError("Open Robot_Master.FCStd first")
+cfg=robot.Robot_LoadConfig()
+for key in cfg["dimensions"]:
+    cfg["dimensions"][key]=float(old.MasterParameters.get(key))
+doc,parts=robot.Robot_BuildMaster(cfg,save=False)
+doc.Label="Robot Master CUSTOM | review and save separately"
+Gui.activeDocument().activeView().viewAxonometric()
+Gui.activeDocument().activeView().fitAll()

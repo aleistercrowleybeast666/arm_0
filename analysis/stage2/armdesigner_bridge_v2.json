@@ -1,0 +1,421 @@
+{
+  "schema": "ArmDesigner candidate bridge v2 (not tested against ArmDesigner)",
+  "units": "mm / deg",
+  "frames": {
+    "base": "base_envelope",
+    "yaw": "shoulder_envelope",
+    "upper": "upper_arm_envelope",
+    "fore": "forearm_envelope",
+    "roll": "wrist_envelope",
+    "pitch": "wrist_pitch_envelope",
+    "tool": "tool_envelope"
+  },
+  "parameters": {
+    "BaseHeight": 180,
+    "UpperArm": 320,
+    "Forearm": 290,
+    "Wrist": 60,
+    "Flange": 35,
+    "Tool": 90,
+    "MotorCount": 6,
+    "FoldLane": 70,
+    "UpperLane": -62,
+    "J1_base_radius": 105,
+    "J2_shoulder_width": 110,
+    "J3_yoke_width": 110,
+    "link_wall": 4,
+    "rib_thickness": 4,
+    "bearing_allowance": 0.2,
+    "assembly_clearance": 2,
+    "print_clearance": 0.3,
+    "cable_channel": 14,
+    "upper_box_width": 36,
+    "upper_box_height": 48,
+    "upper_bend_offset": 24,
+    "upper_split_x": 180,
+    "m3_clearance": 3.4,
+    "m4_clearance": 4.5,
+    "m5_clearance": 5.5,
+    "insert_pilot_diameter": 4.6,
+    "insert_depth": 5,
+    "m4_insert_pilot": 6.2,
+    "bearing_outer": 42,
+    "bearing_inner": 20,
+    "bearing_width": 12
+  },
+  "envelope_semantics": "Each STEP is local to named rigid frame. Use provided world placements, not all at world origin.",
+  "poses": {
+    "HOME": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.3826834323650898,
+          0.0,
+          0.9238795325112867
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          226.2741699796952,
+          0.0,
+          406.2741699796952
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.8191520442889917,
+          0.0,
+          0.5735764363510462
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          127.08832841525133,
+          70.0,
+          678.7850300076086
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.8191520442889917,
+          0.0,
+          0.5735764363510462
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          106.56711981571121,
+          70.0,
+          735.1665872547632
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.25881904510252046,
+          0.0,
+          -0.9659258262890684
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          136.87800894816658,
+          70.0,
+          752.6665872547632
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.25881904510252046,
+          0.0,
+          -0.9659258262890684
+        ]
+      }
+    },
+    "STOW": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.6087614290087207,
+          0.0,
+          0.7933533402912352
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          82.82209443280664,
+          0.0,
+          489.09626441250185
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.8660254037844387,
+          0.0,
+          -0.4999999999999999
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          -62.17790556719342,
+          70.0,
+          237.9488973150147
+        ],
+        "quaternion_xyzw": [
+          -0.4999999999999999,
+          -5.3028761936245346e-17,
+          0.8660254037844387,
+          -3.0616169978683824e-17
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          -92.17790556719343,
+          70.0,
+          185.9873730879484
+        ],
+        "quaternion_xyzw": [
+          0.25881904510252085,
+          -1.584809575715883e-17,
+          0.9659258262890683,
+          -5.914589856893349e-17
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          -122.48879469964879,
+          70.0,
+          203.4873730879484
+        ],
+        "quaternion_xyzw": [
+          0.25881904510252085,
+          -1.584809575715883e-17,
+          0.9659258262890683,
+          -5.914589856893349e-17
+        ]
+      }
+    },
+    "SAFE_UNFOLD": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.6087614290087207,
+          0.0,
+          0.7933533402912352
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          82.82209443280664,
+          0.0,
+          489.09626441250185
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.9914448613738105,
+          0.0,
+          0.13052619222005157
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          -197.29639519102318,
+          70.00000000000001,
+          564.1537874922328
+        ],
+        "quaternion_xyzw": [
+          0.13052619222005157,
+          -6.070848880062641e-17,
+          0.9914448613738105,
+          7.992424175358916e-18
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          -255.25194476836728,
+          70.00000000000001,
+          579.682930198384
+        ],
+        "quaternion_xyzw": [
+          0.793353340291235,
+          -4.857888143902609e-17,
+          0.6087614290087207,
+          -3.7275886773994915e-17
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          -246.19327818977905,
+          70.00000000000001,
+          613.4903341185014
+        ],
+        "quaternion_xyzw": [
+          0.7933533402912352,
+          -4.8578881439026095e-17,
+          0.6087614290087208,
+          -3.727588677399492e-17
+        ]
+      }
+    },
+    "CAKE_APPROACH": {
+      "base": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "yaw": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      "upper": {
+        "translation_mm": [
+          0.0,
+          0.0,
+          180.0
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.4843606734324431,
+          0.0,
+          0.874868411838072
+        ]
+      },
+      "fore": {
+        "translation_mm": [
+          169.85263234052496,
+          0.0,
+          451.20118599850275
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.16840695752687262,
+          0.0,
+          -0.9857175541992453
+        ]
+      },
+      "roll": {
+        "translation_mm": [
+          443.4033084013194,
+          70.0,
+          354.9202033140582
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          -0.16840695752687262,
+          0.0,
+          -0.9857175541992453
+        ]
+      },
+      "pitch": {
+        "translation_mm": [
+          500.0000000001045,
+          70.0,
+          335.0000000000352
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.7071067811865477,
+          0.0,
+          0.7071067811865475
+        ]
+      },
+      "tool": {
+        "translation_mm": [
+          500.0000000001045,
+          70.0,
+          300.0000000000352
+        ],
+        "quaternion_xyzw": [
+          0.0,
+          0.7071067811865477,
+          0.0,
+          0.7071067811865475
+        ]
+      }
+    }
+  }
+}
